@@ -1,0 +1,703 @@
+{
+  "resourceType": "QuestionnaireResponse",
+  "id": "96FE494D-F176-4EFB-A473-2AB406610626",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaireresponse-adapt"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-expirationTime",
+      "valueDate": "2019-05-09T22:21:35"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-finishedTime",
+      "valueDate": "2019-05-06T22:21:35"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-scores",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-scores/theta",
+          "valueDecimal": -0.5
+        },
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-scores/standarderror",
+          "valueDecimal": 0.7
+        }
+      ]
+    }
+  ],
+  "contained": [
+    {
+      "resourceType": "Questionnaire",
+      "id": "96FE494D-F176-4EFB-A473-2AB406610626",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2014-11-14T10:03:25",
+        "profile": [
+          "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-adapt"
+        ]
+      },
+      "url": "http://mss.fsm.northwestern.edu/ac_api/2018-10/Questionnaire/96FE494D-F176-4EFB-A473-2AB406610626",
+      "title": "PROMIS Bank v1.0 - Depression",
+      "status": "active",
+      "date": "2018-03-04T16:22:55.772Z",
+      "subjectType": [
+        "Patient"
+      ],
+      "item": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder",
+              "valueInteger": 4
+            }
+          ],
+          "id": "CMob47",
+          "linkId": "B29814A9-F3B4-4ACF-BEAF-22F42303EED3",
+          "code": [
+            {
+              "system": "",
+              "code": "",
+              "display": ""
+            }
+          ],
+          "type": "group",
+          "item": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder",
+                  "valueInteger": 1
+                }
+              ],
+              "linkId": "7351D046-679A-4A6B-B478-F61EA6048856",
+              "text": "I can change direction by turning around while walking...",
+              "type": "choice",
+              "answerOption": [
+                {
+                  "id": "93CDF02E-3627-42EE-976D-E03A0F0C1444",
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder",
+                      "valueInteger": 1
+                    }
+                  ],
+                  "modifierExtension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionScore",
+                      "valueString": "5"
+                    }
+                  ],
+                  "valueCoding": {
+                    "system": "",
+                    "code": "",
+                    "display": ""
+                  },
+                  "text": "Without any Difficulty"
+                },
+                {
+                  "id": "4BBECC22-527F-44E3-AEF8-132E9F605DDC",
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder",
+                      "valueInteger": 2
+                    }
+                  ],
+                  "modifierExtension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionScore",
+                      "valueString": "4"
+                    }
+                  ],
+                  "valueCoding": {
+                    "system": "",
+                    "code": "",
+                    "display": ""
+                  },
+                  "text": "With a Little Difficulty"
+                },
+                {
+                  "id": "C20BE566-BF16-4EF3-83EC-613E0904B2A1",
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder",
+                      "valueInteger": 3
+                    }
+                  ],
+                  "modifierExtension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionScore",
+                      "valueString": "3"
+                    }
+                  ],
+                  "valueCoding": {
+                    "system": "",
+                    "code": "",
+                    "display": ""
+                  },
+                  "text": "With Some Difficulty"
+                },
+                {
+                  "id": "BC060ED7-2FBC-4763-B9C0-63055E376683",
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder",
+                      "valueInteger": 4
+                    }
+                  ],
+                  "modifierExtension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionScore",
+                      "valueString": "2"
+                    }
+                  ],
+                  "valueCoding": {
+                    "system": "",
+                    "code": "",
+                    "display": ""
+                  },
+                  "text": "With Much Difficulty"
+                },
+                {
+                  "id": "CBA21C73-A482-44DC-943A-047A4A534634",
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder",
+                      "valueInteger": 5
+                    }
+                  ],
+                  "modifierExtension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionScore",
+                      "valueString": "1"
+                    }
+                  ],
+                  "valueCoding": {
+                    "system": "",
+                    "code": "",
+                    "display": ""
+                  },
+                  "text": "Unable to Do"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder",
+              "valueInteger": 3
+            }
+          ],
+          "id": "CMob44",
+          "linkId": "FF8D90C6-E7CB-4A9F-9C1A-7A4CA00D6E88",
+          "code": [
+            {
+              "system": "",
+              "code": "",
+              "display": ""
+            }
+          ],
+          "type": "group",
+          "item": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder",
+                  "valueInteger": 1
+                }
+              ],
+              "linkId": "D793D76B-CF17-4516-9555-8C261D857EF8",
+              "text": "I can take a step with each foot...",
+              "type": "choice",
+              "answerOption": [
+                {
+                  "id": "E654C00E-A8FD-4139-9057-2DA7BF59FCEE",
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder",
+                      "valueInteger": 1
+                    }
+                  ],
+                  "modifierExtension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionScore",
+                      "valueString": ""
+                    }
+                  ],
+                  "valueCoding": {
+                    "system": "",
+                    "code": "",
+                    "display": ""
+                  },
+                  "text": "Without any Difficulty"
+                },
+                {
+                  "id": "8722610F-53ED-4BC1-AC51-3E5592305B4E",
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder",
+                      "valueInteger": 2
+                    }
+                  ],
+                  "modifierExtension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionScore",
+                      "valueString": ""
+                    }
+                  ],
+                  "valueCoding": {
+                    "system": "",
+                    "code": "",
+                    "display": ""
+                  },
+                  "text": "With a Little Difficulty"
+                },
+                {
+                  "id": "4DD3B62B-B631-46B7-90CE-2857588287FF",
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder",
+                      "valueInteger": 3
+                    }
+                  ],
+                  "modifierExtension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionScore",
+                      "valueString": ""
+                    }
+                  ],
+                  "valueCoding": {
+                    "system": "",
+                    "code": "",
+                    "display": ""
+                  },
+                  "text": "With Some Difficulty"
+                },
+                {
+                  "id": "BA6A0E19-1348-411F-9FD7-AA7E89B9E891",
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder",
+                      "valueInteger": 4
+                    }
+                  ],
+                  "modifierExtension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionScore",
+                      "valueString": ""
+                    }
+                  ],
+                  "valueCoding": {
+                    "system": "",
+                    "code": "",
+                    "display": ""
+                  },
+                  "text": "With Much Difficulty"
+                },
+                {
+                  "id": "15B77A3A-58FD-45FA-82B5-6F5A42509A22",
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder",
+                      "valueInteger": 5
+                    }
+                  ],
+                  "modifierExtension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionScore",
+                      "valueString": ""
+                    }
+                  ],
+                  "valueCoding": {
+                    "system": "",
+                    "code": "",
+                    "display": ""
+                  },
+                  "text": "Unable to Do"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder",
+              "valueInteger": 2
+            }
+          ],
+          "id": "PFA30",
+          "linkId": "6FE05EDF-0E32-4057-AA8F-8C3F2E93778F",
+          "code": [
+            {
+              "system": "http://loinc.org",
+              "code": "61613-6",
+              "display": "Are you able to step up and down curbs?"
+            }
+          ],
+          "type": "group",
+          "item": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder",
+                  "valueInteger": 1
+                }
+              ],
+              "linkId": "0D08EEC7-F65C-4BB1-A173-542F6702E09A",
+              "text": "Are you able to step up and down curbs?",
+              "type": "choice",
+              "answerOption": [
+                {
+                  "id": "13E246A3-2F84-4C83-93F9-75591007F88D",
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder",
+                      "valueInteger": 1
+                    }
+                  ],
+                  "modifierExtension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionScore",
+                      "valueString": ""
+                    }
+                  ],
+                  "valueCoding": {
+                    "system": "",
+                    "code": "",
+                    "display": ""
+                  },
+                  "text": "Without any Difficulty"
+                },
+                {
+                  "id": "73494325-7DC2-4D2C-BF8E-E6A2C41EAC69",
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder",
+                      "valueInteger": 2
+                    }
+                  ],
+                  "modifierExtension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionScore",
+                      "valueString": ""
+                    }
+                  ],
+                  "valueCoding": {
+                    "system": "",
+                    "code": "",
+                    "display": ""
+                  },
+                  "text": "With a Little Difficulty"
+                },
+                {
+                  "id": "64A18B43-F2D1-46A1-82F4-5BCD62131AAE",
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder",
+                      "valueInteger": 3
+                    }
+                  ],
+                  "modifierExtension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionScore",
+                      "valueString": ""
+                    }
+                  ],
+                  "valueCoding": {
+                    "system": "",
+                    "code": "",
+                    "display": ""
+                  },
+                  "text": "With Some Difficulty"
+                },
+                {
+                  "id": "D8814244-00AD-44E6-BF82-2969F8BCFCCD",
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder",
+                      "valueInteger": 4
+                    }
+                  ],
+                  "modifierExtension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionScore",
+                      "valueString": ""
+                    }
+                  ],
+                  "valueCoding": {
+                    "system": "",
+                    "code": "",
+                    "display": ""
+                  },
+                  "text": "With Much Difficulty"
+                },
+                {
+                  "id": "D8AE4358-9114-4078-A698-C4789DD34386",
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder",
+                      "valueInteger": 5
+                    }
+                  ],
+                  "modifierExtension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionScore",
+                      "valueString": ""
+                    }
+                  ],
+                  "valueCoding": {
+                    "system": "",
+                    "code": "",
+                    "display": ""
+                  },
+                  "text": "Unable to Do"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder",
+              "valueInteger": 1
+            }
+          ],
+          "id": "EDDEP29",
+          "linkId": "DEE2D9CA-0094-492A-AA25-D4D53D426976",
+          "code": [
+            {
+              "system": "http://loinc.org",
+              "code": "61967-6",
+              "display": "In the past 7 daysI felt depressed"
+            }
+          ],
+          "type": "group",
+          "item": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder",
+                  "valueInteger": 1
+                }
+              ],
+              "linkId": "8AB8BA58-3BB0-40B6-B656-C24F1169069B",
+              "text": "In the past 7 days",
+              "type": "display"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder",
+                  "valueInteger": 2
+                }
+              ],
+              "linkId": "C24FEEED-B48C-4BD4-972B-5AB30A5A6353",
+              "text": "I felt depressed",
+              "type": "choice",
+              "answerOption": [
+                {
+                  "id": "BF2FFE4B-53FA-45B7-8464-58A1E84B49DD",
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder",
+                      "valueInteger": 1
+                    }
+                  ],
+                  "modifierExtension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionScore",
+                      "valueString": ""
+                    }
+                  ],
+                  "valueCoding": {
+                    "system": "http://loinc.org",
+                    "code": "LA6270-8",
+                    "display": "Never"
+                  },
+                  "text": "Never"
+                },
+                {
+                  "id": "D96D8FBD-C726-4D34-8C3C-2B4377C0438B",
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder",
+                      "valueInteger": 2
+                    }
+                  ],
+                  "modifierExtension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionScore",
+                      "valueString": ""
+                    }
+                  ],
+                  "valueCoding": {
+                    "system": "http://loinc.org",
+                    "code": "LA10066-1",
+                    "display": "Rarely"
+                  },
+                  "text": "Rarely"
+                },
+                {
+                  "id": "23EC60A7-53E7-4BE2-BCDB-2D70365D0EF7",
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder",
+                      "valueInteger": 3
+                    }
+                  ],
+                  "modifierExtension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionScore",
+                      "valueString": ""
+                    }
+                  ],
+                  "valueCoding": {
+                    "system": "http://loinc.org",
+                    "code": "LA10082-8",
+                    "display": "Sometimes"
+                  },
+                  "text": "Sometimes"
+                },
+                {
+                  "id": "67032EB7-497B-4021-91CB-4DBB5C995FED",
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder",
+                      "valueInteger": 4
+                    }
+                  ],
+                  "modifierExtension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionScore",
+                      "valueString": ""
+                    }
+                  ],
+                  "valueCoding": {
+                    "system": "http://loinc.org",
+                    "code": "LA10044-8",
+                    "display": "Often"
+                  },
+                  "text": "Often"
+                },
+                {
+                  "id": "B85C15C3-C28F-4C5D-8869-C09C3254D562",
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder",
+                      "valueInteger": 5
+                    }
+                  ],
+                  "modifierExtension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionScore",
+                      "valueString": ""
+                    }
+                  ],
+                  "valueCoding": {
+                    "system": "http://loinc.org",
+                    "code": "LA9933-8",
+                    "display": "Always"
+                  },
+                  "text": "Always"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "questionnaire": "http://hl7.org/fhir/us/sdc/StructureDefinition/sdc-questionnaire-dynamic",
+  "status": "in-progress",
+  "subject": "Patient",
+  "authored": "2019-05-06T22:21:35",
+  "item": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder",
+          "valueInteger": 1
+        }
+      ],
+      "linkId": "DEE2D9CA-0094-492A-AA25-D4D53D426976",
+      "answer": [
+        {
+          "valueString": "Always",
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA9933-8",
+            "display": "Always"
+          },
+          "text": ""
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder",
+          "valueInteger": 2
+        }
+      ],
+      "linkId": "6FE05EDF-0E32-4057-AA8F-8C3F2E93778F",
+      "answer": [
+        {
+          "valueString": "Unable to Do",
+          "valueCoding": {
+            "system": "",
+            "code": "",
+            "display": ""
+          },
+          "text": "Unable to Do"
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder",
+          "valueInteger": 3
+        }
+      ],
+      "linkId": "FF8D90C6-E7CB-4A9F-9C1A-7A4CA00D6E88",
+      "answer": [
+        {
+          "valueString": "Unable to Do",
+          "valueCoding": {
+            "system": "",
+            "code": "",
+            "display": ""
+          },
+          "text": "Unable to Do"
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder",
+          "valueInteger": 4
+        }
+      ],
+      "linkId": "B29814A9-F3B4-4ACF-BEAF-22F42303EED3",
+      "answer": [
+        {
+          "valueString": "Unable to Do",
+          "valueCoding": {
+            "system": "",
+            "code": "",
+            "display": ""
+          },
+          "text": "Unable to Do"
+        }
+      ]
+    }
+  ]
+}

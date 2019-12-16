@@ -1,0 +1,20 @@
+<ion-content padding>
+  <parent-list-component
+    *ngIf="currentItem"
+    [item]="currentItem"
+    [parentListComponentSendAnswer]='questionnairePageAnswerSelectedHandler'>
+  </parent-list-component>
+</ion-content>
+
+<ion-footer no-border>
+  <div>
+    <ion-grid>
+      <ion-row text-center>
+        <ion-col>
+          <button ion-button [disabled]="!questionId" clear (click)="onBack()"><img class="footer-button" src="../../assets/imgs/arrow-left-circle.png"></button>
+          <button ion-button clear (click)="onHelp()"><img class="footer-button" src="../../assets/imgs/help-circle.png"></button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+</ion-footer>

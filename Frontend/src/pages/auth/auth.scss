@@ -1,0 +1,58 @@
+page-auth {
+  .scroll-content {
+    background: color($colors, primary);
+  }
+
+  .logo {
+    height: 66px;
+    margin-top: 53px;
+    margin-bottom: 53px;
+  }
+
+  .title {
+    display: flex;
+    justify-content: center;
+    padding-top: 94px;
+    margin: 0px;
+  }
+
+  .login {
+    display: flex;
+    justify-content: center;
+    padding-top:65px;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    p {
+      margin: 0px;
+    }
+  }
+
+  .medstar-wrapper {
+    width: 225px;
+    height: 58px;
+    border-radius: 30px;
+    background-color: color($colors, white);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 50px;
+    margin-top: 20px;
+  }
+
+  .continueLoginSpinner {
+    margin-top: 120px;
+  }
+
+  .beginningSpinner {
+    margin-top: 40px;
+  }
+
+
+  ion-spinner * {
+    width: 24px;
+    height: 24px;
+    stroke: #FFFFFF !important;
+  }
+
+}

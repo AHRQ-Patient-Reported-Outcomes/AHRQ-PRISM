@@ -1,0 +1,62 @@
+<ion-content padding>
+  <div class="back-button">
+    <img class="left-arrow" src="../../assets/imgs/arrow-left.png" (click)="goBack()">
+  </div>
+
+  <div class="header">
+    <p class="header-text">My Physical Function</p>
+  </div>
+
+  <div class="recent-result">
+    <ion-grid>
+      <ion-row><p class="section-header">Most Recent Result</p></ion-row>
+      <ion-row><p class="date">{{ recentDate }}</p></ion-row>
+      <ion-row><p class="score">{{ mostRecentScore }}</p></ion-row>
+      <ion-row><p class="description">{{ recentDescription }}</p></ion-row>
+
+      <thermometer-graph-component
+        [score]="mostRecentScore"
+        color="pink">
+      </thermometer-graph-component>
+
+      <ion-row>
+        <p class="summary">
+          You’re doing better than
+          <span *ngIf="recentComparison.yourGender">
+            {{ recentComparison.yourGender }}% of {{ currentPatient.gender }} patients,
+          </span>
+          {{ recentComparison.yourAge }}% of patients your age, and better than {{ recentComparison.allPeople }}% of all patients.
+        </p>
+      </ion-row>
+    </ion-grid>
+  </div>
+
+  <div class="history">
+    <ion-grid>
+      <ion-row><p class="section-header">Your History</p></ion-row>
+      <line-graph-component
+        *ngIf="graphData && graphData.length > 1"
+        [chartData]="graphData"
+        [horizontalAxisLines]="true"
+        [chartColor]="chartColor"
+        [chartHeight]=150
+        [displayAxis]=false>
+      </line-graph-component>
+    </ion-grid>
+  </div>
+
+  <div class="past-results">
+    <ion-list>
+      <ion-item *ngFor="let result of historyData">
+        <ion-grid no-padding>
+          <ion-row>
+            <ion-col col-auto class="past-score">{{ result.score | number: "1.0-0"}}</ion-col>
+            <ion-col class="type">Physical Function</ion-col>
+            <ion-col text-right class="result-date">{{ result.date | date: "MM/dd/yyyy"}}</ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-item>
+    </ion-list>
+  </div>
+
+</ion-content>

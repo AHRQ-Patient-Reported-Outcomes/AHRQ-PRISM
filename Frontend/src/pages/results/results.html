@@ -1,0 +1,30 @@
+<ion-content padding>
+  <div class="score-container">
+    <p class="header">{{ title }}</p>
+    <p class="subheader">{{ description }}</p>
+    <p class="score">{{ score }}</p>
+  </div>
+
+  <div style="padding: 0 34px">
+    <thermometer-graph-component [score]="score"></thermometer-graph-component>
+  </div>
+
+  <div class="summary-container" *ngIf="comparison">
+    <ion-grid class="summary">
+      <ion-row class="summary-title">Your score is higher than</ion-row>
+      <ion-row class="stats">{{ comparison.allPeople }}% of all people</ion-row>
+      <ion-row class="stats">{{ comparison.yourGender }}% of people your sex</ion-row>
+      <ion-row class="stats">{{ comparison.yourAge }}% of people your age</ion-row>
+    </ion-grid>
+  </div>
+</ion-content>
+
+<div class="button-container">
+  <ion-grid>
+    <ion-row text-center>
+      <ion-col>
+        <button ion-button round color="white" class="button button-goto" (click)="goToHome()">Go To Home</button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</div>

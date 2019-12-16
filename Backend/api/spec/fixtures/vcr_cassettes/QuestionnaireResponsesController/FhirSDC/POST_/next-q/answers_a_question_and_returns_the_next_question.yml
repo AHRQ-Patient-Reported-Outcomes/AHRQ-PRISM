@@ -1,0 +1,85 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://www.assessmentcenter.net/AC_API/2018-10/Questionnaire/154D0273-C3F6-4BCE-8885-3194D4CC4596/next-q
+    body:
+      encoding: UTF-8
+      string: '{"contained":[{"id":"154D0273-C3F6-4BCE-8885-3194D4CC4596","item":[{"code":[{"system":"http://loinc.org","display":"In
+        the past 7 daysHow much did pain interfere with your day to day activities?","code":"61758-9"}],"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder","valueInteger":1}],"id":"PAININ9","item":[{"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder","valueInteger":1}],"linkId":"8AB8BA58-3BB0-40B6-B656-C24F1169069B","text":"In
+        the past 7 days","type":"display"},{"answerOption":[{"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder","valueInteger":1}],"id":"DC8FFD51-702B-4E77-BEE6-E9A9EB9C088F","modifierExtension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-optionScore","valueString":"1"}],"text":"Not
+        at all","valueCoding":{"system":"http://loinc.org","display":"Not at all","code":"LA6568-5"}},{"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder","valueInteger":2}],"id":"72A3573B-E0C3-4358-AF57-858F11A0ED49","modifierExtension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-optionScore","valueString":"2"}],"text":"A
+        little bit","valueCoding":{"system":"http://loinc.org","display":"A little
+        bit","code":"LA13863-8"}},{"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder","valueInteger":3}],"id":"C31A3FCB-A380-444F-8579-62AA5DA11BA2","modifierExtension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-optionScore","valueString":"3"}],"text":"Somewhat","valueCoding":{"system":"http://loinc.org","display":"Somewhat","code":"LA13909-9"}},{"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder","valueInteger":4}],"id":"FCD65655-AA94-44B6-B944-2994D984A4E3","modifierExtension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-optionScore","valueString":"4"}],"text":"Quite
+        a bit","valueCoding":{"system":"http://loinc.org","display":"Quite a bit","code":"LA13902-4"}},{"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder","valueInteger":5}],"id":"1F43076B-0B6B-4D91-8B3C-EF6E39F9CF18","modifierExtension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-optionScore","valueString":"5"}],"text":"Very
+        much","valueCoding":{"system":"http://loinc.org","display":"Very much","code":"LA13914-9"}}],"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder","valueInteger":2}],"linkId":"5B10732E-3A51-438C-A437-B07E2CFBE71A","text":"How
+        much did pain interfere with your day to day activities?","type":"choice"}],"linkId":"C595E017-42B2-4093-9C3E-B338B22E4FE4","type":"group"}],"meta":{"versionId":null,"lastUpdated":null,"profile":["http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-adapt"]},"resourceType":"Questionnaire","status":"active","subjectType":["Patient"]}],"id":"questResp-851666e0-8e81-4cee-8725-efe67eee1f96","meta":{"profile":["http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaireresponse-adapt"]},"resourceType":"QuestionnaireResponse","item":[{"answer":[{"valueCoding":{"system":"http://loinc.org","display":"Somewhat","code":"LA13909-9"},"valueString":"Somewhat"}],"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder","valueInteger":1}],"linkId":"C595E017-42B2-4093-9C3E-B338B22E4FE4"}],"status":"in-progress"}'
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private
+      Content-Type:
+      - application/fhir+json; charset=utf-8
+      Server:
+      - Microsoft-IIS/8.5
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Authorization
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - OPTIONS, GET, POST
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Frame-Options:
+      - SAMEORIGIN
+      Date:
+      - Tue, 18 Jun 2019 16:40:13 GMT
+      Content-Length:
+      - '7166'
+    body:
+      encoding: UTF-8
+      string: "{\"resourceType\": \"QuestionnaireResponse\",\"id\": \"154D0273-C3F6-4BCE-8885-3194D4CC4596\",\r\n\"meta\":
+        {\"profile\":[\"http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaireresponse-adapt\"]},\r\n\"extension\":
+        [\r\n{\"url\":\"http://hl7.org/fhir/StructureDefinition/questionnaire-expirationTime\",\"valueDate\":\"2019-06-21T16:40:13\"},\r\n{\"url\":\"http://hl7.org/fhir/StructureDefinition/questionnaire-finishedTime\",\"valueDate\":\"2019-06-18T16:40:13\"},\r\n{\"url\":\"http://hl7.org/fhir/StructureDefinition/questionnaire-scores\",\r\n\"extension\":[{\"url\":\"http://hl7.org/fhir/StructureDefinition/questionnaire-scores/theta\",\"valueDecimal\":1.1},{\"url\":\"http://hl7.org/fhir/StructureDefinition/questionnaire-scores/standarderror\",\"valueDecimal\":0.3}]}],\r\n\"contained\":
+        [{\"resourceType\":\"Questionnaire\",\r\n\"id\":\"154D0273-C3F6-4BCE-8885-3194D4CC4596\",\r\n\"meta\":{\"versionId\":\"\",\"lastUpdated\":\"\",\"profile\":[\"http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-adapt\"]},\r\n\"url\":\"\",\r\n\"title\":\"\",\r\n\"status\":\"active\",\r\n\"date\":\"\",\r\n\"subjectType\":[\"Patient\"],\r\n\"item\":[\r\n\r\n{\"extension\":[{\"url\":\"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder\",\"valueInteger\":2}],\r\n\"id\":\"PAININ31\",\r\n\"linkId\":\"4022007D-41E8-4B28-8100-5A2D544DC699\",\r\n\"code\":[{\"system\":\"http://loinc.org\",
+        \"code\":\"61773-8\", \"display\":\"In the past 7 daysHow much did pain interfere
+        with your ability to participate in social activities?\"}],\r\n\"type\":\"group\",\r\n\"item\":[{\"extension\":[{\"url\":\"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder\",\"valueInteger\":1}],\r\n\"linkId\":\"8AB8BA58-3BB0-40B6-B656-C24F1169069B\",\r\n\"text\":\"In
+        the past 7 days\",\r\n\"type\":\"display\"\r\n}\r\n,{\"extension\":[{\"url\":\"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder\",\"valueInteger\":2}],\r\n\"linkId\":\"D7909665-A8AB-4C99-9C0B-2E3D67FA8D86\",\r\n\"text\":\"How
+        much did pain interfere with your ability to participate in social activities?\",\r\n\"type\":\"choice\"\r\n,\"answerOption\":[\r\n{\"id\":\"9CA3B52E-4F60-4D5B-B46A-BD08BE127736\",\r\n\"extension\":[{\"url\":\"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder\",\"valueInteger\":1}],\r\n\"modifierExtension\":[{\"url\":\"http://hl7.org/fhir/StructureDefinition/questionnaire-optionScore\",\"valueString\":\"1\"}],\r\n\"valueCoding\":{\"system\":\"http://loinc.org\",
+        \"code\":\"LA6568-5\", \"display\":\"Not at all\"},\r\n\"text\":\"Not at all\"}\r\n,\r\n{\"id\":\"9E961377-69F2-46C5-98BE-7BA97754BF81\",\r\n\"extension\":[{\"url\":\"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder\",\"valueInteger\":2}],\r\n\"modifierExtension\":[{\"url\":\"http://hl7.org/fhir/StructureDefinition/questionnaire-optionScore\",\"valueString\":\"2\"}],\r\n\"valueCoding\":{\"system\":\"http://loinc.org\",
+        \"code\":\"LA13863-8\", \"display\":\"A little bit\"},\r\n\"text\":\"A little
+        bit\"}\r\n,\r\n{\"id\":\"494BAEAE-F208-432E-AC49-06BFAC808528\",\r\n\"extension\":[{\"url\":\"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder\",\"valueInteger\":3}],\r\n\"modifierExtension\":[{\"url\":\"http://hl7.org/fhir/StructureDefinition/questionnaire-optionScore\",\"valueString\":\"3\"}],\r\n\"valueCoding\":{\"system\":\"http://loinc.org\",
+        \"code\":\"LA13909-9\", \"display\":\"Somewhat\"},\r\n\"text\":\"Somewhat\"}\r\n,\r\n{\"id\":\"5BAE6820-BB98-40B4-9E5F-784988F7CA40\",\r\n\"extension\":[{\"url\":\"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder\",\"valueInteger\":4}],\r\n\"modifierExtension\":[{\"url\":\"http://hl7.org/fhir/StructureDefinition/questionnaire-optionScore\",\"valueString\":\"4\"}],\r\n\"valueCoding\":{\"system\":\"http://loinc.org\",
+        \"code\":\"LA13902-4\", \"display\":\"Quite a bit\"},\r\n\"text\":\"Quite
+        a bit\"}\r\n,\r\n{\"id\":\"35DB71CD-42EB-4BCD-AA47-19A9885FD29C\",\r\n\"extension\":[{\"url\":\"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder\",\"valueInteger\":5}],\r\n\"modifierExtension\":[{\"url\":\"http://hl7.org/fhir/StructureDefinition/questionnaire-optionScore\",\"valueString\":\"5\"}],\r\n\"valueCoding\":{\"system\":\"http://loinc.org\",
+        \"code\":\"LA13914-9\", \"display\":\"Very much\"},\r\n\"text\":\"Very much\"}\r\n]}\r\n]}\r\n,{\"extension\":[{\"url\":\"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder\",\"valueInteger\":1}],\r\n\"id\":\"PAININ9\",\r\n\"linkId\":\"C595E017-42B2-4093-9C3E-B338B22E4FE4\",\r\n\"code\":[{\"system\":\"http://loinc.org\",
+        \"code\":\"61758-9\", \"display\":\"In the past 7 daysHow much did pain interfere
+        with your day to day activities?\"}],\r\n\"type\":\"group\",\r\n\"item\":[{\"extension\":[{\"url\":\"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder\",\"valueInteger\":1}],\r\n\"linkId\":\"8AB8BA58-3BB0-40B6-B656-C24F1169069B\",\r\n\"text\":\"In
+        the past 7 days\",\r\n\"type\":\"display\"\r\n}\r\n,{\"extension\":[{\"url\":\"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder\",\"valueInteger\":2}],\r\n\"linkId\":\"5B10732E-3A51-438C-A437-B07E2CFBE71A\",\r\n\"text\":\"How
+        much did pain interfere with your day to day activities?\",\r\n\"type\":\"choice\"\r\n,\"answerOption\":[\r\n{\"id\":\"DC8FFD51-702B-4E77-BEE6-E9A9EB9C088F\",\r\n\"extension\":[{\"url\":\"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder\",\"valueInteger\":1}],\r\n\"modifierExtension\":[{\"url\":\"http://hl7.org/fhir/StructureDefinition/questionnaire-optionScore\",\"valueString\":\"\"}],\r\n\"valueCoding\":{\"system\":\"http://loinc.org\",
+        \"code\":\"LA6568-5\", \"display\":\"Not at all\"},\r\n\"text\":\"Not at all\"}\r\n,\r\n{\"id\":\"72A3573B-E0C3-4358-AF57-858F11A0ED49\",\r\n\"extension\":[{\"url\":\"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder\",\"valueInteger\":2}],\r\n\"modifierExtension\":[{\"url\":\"http://hl7.org/fhir/StructureDefinition/questionnaire-optionScore\",\"valueString\":\"\"}],\r\n\"valueCoding\":{\"system\":\"http://loinc.org\",
+        \"code\":\"LA13863-8\", \"display\":\"A little bit\"},\r\n\"text\":\"A little
+        bit\"}\r\n,\r\n{\"id\":\"C31A3FCB-A380-444F-8579-62AA5DA11BA2\",\r\n\"extension\":[{\"url\":\"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder\",\"valueInteger\":3}],\r\n\"modifierExtension\":[{\"url\":\"http://hl7.org/fhir/StructureDefinition/questionnaire-optionScore\",\"valueString\":\"\"}],\r\n\"valueCoding\":{\"system\":\"http://loinc.org\",
+        \"code\":\"LA13909-9\", \"display\":\"Somewhat\"},\r\n\"text\":\"Somewhat\"}\r\n,\r\n{\"id\":\"FCD65655-AA94-44B6-B944-2994D984A4E3\",\r\n\"extension\":[{\"url\":\"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder\",\"valueInteger\":4}],\r\n\"modifierExtension\":[{\"url\":\"http://hl7.org/fhir/StructureDefinition/questionnaire-optionScore\",\"valueString\":\"\"}],\r\n\"valueCoding\":{\"system\":\"http://loinc.org\",
+        \"code\":\"LA13902-4\", \"display\":\"Quite a bit\"},\r\n\"text\":\"Quite
+        a bit\"}\r\n,\r\n{\"id\":\"1F43076B-0B6B-4D91-8B3C-EF6E39F9CF18\",\r\n\"extension\":[{\"url\":\"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder\",\"valueInteger\":5}],\r\n\"modifierExtension\":[{\"url\":\"http://hl7.org/fhir/StructureDefinition/questionnaire-optionScore\",\"valueString\":\"\"}],\r\n\"valueCoding\":{\"system\":\"http://loinc.org\",
+        \"code\":\"LA13914-9\", \"display\":\"Very much\"},\r\n\"text\":\"Very much\"}\r\n]}\r\n]}\r\n\r\n\r\n]\r\n}],\r\n\"questionnaire\":
+        \"http://hl7.org/fhir/us/sdc/StructureDefinition/sdc-questionnaire-dynamic\",\r\n\"status\":\"in-progress\",\r\n\"subject\":\"Patient\",\r\n\"authored\":\"2019-06-18T16:40:13\",\r\n\"item\":
+        [{\"extension\":[{\"url\":\"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder\",\"valueInteger\":1}],\r\n\"linkId\":\"C595E017-42B2-4093-9C3E-B338B22E4FE4\",\r\n\"answer\":[{\"valueString\":\"Somewhat\",\"valueCoding\":{\"system\":\"http://loinc.org\",\"code\":\"LA13909-9\",\"display\":\"Somewhat\"},\"text\":\"\"}]\r\n}\r\n]\r\n}\r\n"
+    http_version: 
+  recorded_at: Tue, 18 Jun 2019 16:40:09 GMT
+recorded_with: VCR 4.0.0

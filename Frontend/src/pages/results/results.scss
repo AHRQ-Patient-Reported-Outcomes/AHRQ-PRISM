@@ -1,0 +1,95 @@
+page-results {
+  .scroll-content {
+    background: color($colors, primary);
+    padding: 0px !important;
+  }
+
+  .score-container {
+    margin: 81px 42px 0px 42px;
+    font-size: 160px;
+
+    padding-top: 0px;
+    padding-top: env(safe-area-inset-top);
+
+    .subheader, .header, .score {
+      margin-top: 0;
+      font-weight: bold;
+      color: white;
+    }
+
+    .subheader {
+      font-size: 20px;
+      margin-bottom: 16px;
+    }
+
+    .header {
+      font-size: 30px;
+      margin-bottom: 2px;
+    }
+
+    .score {
+      margin: 0px;
+      line-height: 1;
+    }
+
+    @media only screen and (max-height: 470px) {
+      margin-top: 20px;
+      font-size: 115px;
+
+      .header {
+        font-size: 25px;
+      }
+
+      .subheader {
+        font-size: 20px;
+      }
+    }
+  }
+
+  .summary-container {
+    width: 100%;
+    margin-top: 20px;
+    padding-top: 25px;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.11), rgba(0,0,0,0));
+
+    .summary {
+      margin: 0 auto;
+      width: fit-content;
+      padding-bottom: 110px;
+
+      @media only screen and (max-width: 374px) {
+        margin: 0 30px;
+      }
+
+      .summary-title {
+        font-size: 24px;
+        font-weight: bold;
+        color: white;
+      }
+
+      .stats {
+        font-size: 18px;
+        font-weight: bold;
+        color: white;
+        padding-top: 5px;
+      }
+    }
+  }
+
+  .button-container {
+    position: fixed;
+    bottom: 20px;
+    width: 100%;
+    left: 0;
+    right: 0;
+    z-index: 1;
+
+    .button-goto {
+      color: color($colors, primary);
+      font-size: 16px;
+      font-weight: bold;
+      width: 45%;
+      box-shadow: 0 0 20px 0 rgba(0,0,0,.4);
+    }
+  }
+}

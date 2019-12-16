@@ -1,0 +1,108 @@
+page-welcome {
+  .scroll-content {
+    background: color($colors, primary);
+    padding: 0px !important;
+  }
+
+  .title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    box-shadow: 0px 15px 10px 0px rgba(0, 0, 0, 0.15);
+  }
+
+  .logo {
+    height: 66px;
+    margin-top: 53px;
+    margin-bottom: 53px;
+  }
+
+  .questions {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 157px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0px 15px 10px 0px rgba(0, 0, 0, 0.15);
+  }
+
+  .question-text {
+    margin: 0px;
+  }
+
+  .score {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 157px;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0px 15px 10px 0px rgba(0, 0, 0, 0.15);
+  }
+
+  .score-title {
+    font-size: 60px;
+    margin: 0px;
+  }
+
+  .score-text {
+    font-size: 18px;
+    margin: 0px;
+  }
+
+  .info {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+
+    @media only screen and (max-width: 374px) {
+      font-size: 16px;
+    }
+  }
+
+  .info-grid {
+    margin-top: 30px;
+    width: 90%;
+    margin-bottom: 60px;
+
+    @media only screen and (max-width: 374px) {
+      margin-bottom: 80px;
+    }
+  }
+
+  .button {
+    color: color($colors, primary);
+    font-size: 16px;
+    font-weight: bold;
+    width: 75%;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,.4);
+ }
+
+  .grid-col {
+    padding: 0px;
+  }
+
+  .medstar {
+    height: 25px;
+    margin-left: 5px;
+  }
+
+  .button-container {
+    position: fixed;
+    bottom: 20px;
+    width: 100%;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
+
+}

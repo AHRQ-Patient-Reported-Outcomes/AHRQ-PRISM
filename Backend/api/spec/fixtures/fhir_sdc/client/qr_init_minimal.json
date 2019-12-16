@@ -1,0 +1,23 @@
+{
+  "resourceType": "QuestionnaireResponse",
+  "id": "test",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaireresponse-adapt"
+    ]
+  },
+  "contained": [
+    {
+      "resourceType": "Questionnaire",
+      "id": "96FE494D-F176-4EFB-A473-2AB406610626",
+      "meta": {
+        "profile": [
+          "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-adapt"
+        ]
+      },
+      "status": "active",
+      "subjectType": ["Patient"]
+    }
+  ],
+  "status": "in-progress"
+}

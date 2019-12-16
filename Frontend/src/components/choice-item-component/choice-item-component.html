@@ -1,0 +1,25 @@
+<div>
+  <p *ngIf="item.text" class="question">{{ item.text }}</p>
+  <div class="answers-container">
+    <div class="answers">
+      <ion-card>
+        <ion-list>
+          <button ion-button full
+            class="buttonOption"
+            *ngFor="let question of item.answerOption; index as i"
+            (click)="answerClicked(question, i)"
+            [disabled]='item.isAnswered'
+            [class.selected]='question.isSelected'>
+            <span *ngIf="!question.isSelected || i !== answerIndex">
+              {{question.text}}
+            </span>
+            <ion-spinner
+              *ngIf="question.isSelected && i === answerIndex"
+              color="white">
+            </ion-spinner>
+          </button>
+        </ion-list>
+      </ion-card>
+    </div>
+  </div>
+</div>

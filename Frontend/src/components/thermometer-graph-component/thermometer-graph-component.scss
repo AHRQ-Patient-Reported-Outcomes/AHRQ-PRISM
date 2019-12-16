@@ -1,0 +1,69 @@
+// thermometer-graph-component {
+  .thermometer-pointer-container {
+    width: 100%;
+    height: 40px;
+    position: relative;
+
+    .thermometer-pointer {
+      position: absolute;
+      margin-left: -11px;
+      height: 22px;
+      width: 22px;
+      bottom: 0;
+    }
+  }
+
+  .thermometer-score-container {
+    display: flex;
+    justify-content: space-between;
+
+    .score-low, .score-high {
+      padding: 5px 0 0 0;
+      color: white;
+    }
+  }
+
+  .thermometer-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+
+    .thermometer-range {
+      height: 15px;
+
+      &.range-spacer {
+        flex-basis: 4px;
+      }
+
+      &.range-1 {
+        background-color: #ED3131;
+        flex-basis: 28.6%;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+      }
+
+      &.range-2 {
+        background-color: #FF9F0F;
+        flex-basis: 11.4%;
+      }
+
+      &.range-3 {
+        background-color: #FFF81F;
+        flex-basis: 10%;
+      }
+
+      &.range-4 {
+        background-color: #ABFF24;
+        flex-basis: 11.4%;
+      }
+
+      &.range-5 {
+        background-color: #2ED600;
+        flex-basis:  38.6%;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+      }
+    }
+  }
+// }

@@ -1,0 +1,39 @@
+<ion-content padding>
+  <div class="title">
+    <img class="logo" src="../../assets/imgs/PRISM-white.png">
+  </div>
+
+  <div class="login" *ngIf="currentAuthStatus === 'beginning'">
+    <ion-grid>
+      <ion-row>
+        <ion-col text-center><p>Taking you to</p></ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col text-center>
+          <div class="medstar-wrapper">
+            <img class="medstar" src="../../assets/imgs/medstar.png">
+          </div>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col text-center>
+          <ion-spinner class="beginningSpinner"></ion-spinner>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+
+  <div class="login" *ngIf="currentAuthStatus === 'continueLogin'">
+    <ion-grid>
+      <ion-row>
+        <ion-col text-center><p>Logging you in...</p></ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col text-center>
+          <ion-spinner class="continueLoginSpinner"></ion-spinner>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+
+</ion-content>

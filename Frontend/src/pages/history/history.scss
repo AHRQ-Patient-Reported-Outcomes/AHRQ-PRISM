@@ -1,0 +1,95 @@
+page-history {
+  .back-button {
+    display: flex;
+    margin-top: 28px;
+    margin-left: 18px;
+
+    .left-arrow {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  .header {
+    margin-left: 18px;
+    margin-top: 19px;
+
+    .header-text {
+      font-size: 30px;
+      font-weight: bold;
+      color: black;
+      margin: 0px;
+    }
+  }
+
+  .recent-result, .history {
+    margin-left: 18px;
+    margin-top: 39px;
+    margin-right: 33px;
+  }
+
+  .recent-result {
+    .section-header {
+      font-size: 18px;
+      font-weight: bold;
+      color: color($colors, primary);
+      margin: 0px;
+      margin-bottom: 10px;
+    }
+
+    .date {
+      font-size: 14px;
+      font-weight: bold;
+      color: #555555;
+      margin: 0px;
+    }
+
+    .score {
+      font-size: 80px;
+      font-weight: bold;
+      color: color($colors, primary);
+      margin: 0px;
+      margin-top: 5px;
+    }
+
+    .description {
+      font-size: 16px;
+      font-weight: bold;
+      color: color($colors, primary);
+      margin: 0px;
+    }
+
+    .summary {
+      font-size: 16px;
+      font-weight: bold;
+      color: black;
+      margin: 0px;
+      margin-top: 10px;
+    }
+  }
+
+  .past-results {
+    margin-left: 18px;
+    margin-top: 20px;
+    margin-right: 18px;
+
+    .past-score {
+      font-size: 14px;
+      color: color($colors, primary);
+      font-weight: 500;
+    }
+
+    .type {
+      font-size: 14px;
+      color: black;
+      font-weight: 500;
+      margin-left: 10px;
+    }
+
+    .result-date {
+      font-size: 14px;
+      color: #8C8C8C;
+      font-weight: 500;
+    }
+  }
+}

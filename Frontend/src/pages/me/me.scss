@@ -1,0 +1,134 @@
+page-me {
+  .scroll-content {
+    padding: 0px !important;
+  }
+
+  .profile-header {
+    margin-top: 43px;
+    margin-left: 28px;
+  }
+
+  .profile-card {
+    margin-top: 23px;
+  }
+
+  .card {
+    margin-left: 14px;
+    margin-right: 17px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 16px 0px rgba(0,0,0,0.2);
+  }
+
+  .card-grid {
+    padding-left: 25px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+  }
+
+  .card-row-header {
+    margin-top: 15px;
+  }
+
+  .card-row {
+    margin-top: 15px;
+    padding-right: 5px;
+  }
+
+  .chart-row {
+    margin-top: 5px;
+  }
+
+  .recent-score {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0px;
+    color: #777777;
+  }
+
+  .name {
+    text-transform: capitalize;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0px;
+  }
+
+  .settings-button {
+    color: color($colors, primary);
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 0px;
+    margin: 0px;
+    margin-top: 5px;
+  }
+
+  [icon-only] ion-icon {
+    padding: 0px;
+  }
+
+  .card-header {
+    font-size: 18px;
+    font-weight: bold;
+    color:  black;
+  }
+
+  .right-arrow {
+    width: 24px;
+    height: 24px;
+  }
+
+  .col {
+    padding: 0px;
+  }
+
+  .card-body-text {
+    font-size: 16px;
+    font-weight: 500;
+    color:  black;
+  }
+
+  .story-image {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+
+  .recommended-image {
+    height: 40px;
+    width: 40px;
+    border-radius: 10px;
+    margin-right: 10px;
+  }
+
+  ion-footer  {
+    background-color: #353535;
+    padding: 15px !important;
+    padding-top: 10px !important;
+    height: 80px;
+
+    @media only screen and (max-width: 374px) {
+      height: 100px;
+    }
+  }
+
+  .alert-image {
+    height: 25px;
+    width: 25px;
+    margin-right: 20px;
+  }
+
+  .alert-body {
+    margin: 0px;
+    font-size: 14px;
+    font-weight: 500;
+    color:  white;
+  }
+
+  .alert-subtitle {
+    margin: 0px;
+    margin-top: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    color: color($colors, primary);
+  }
+}

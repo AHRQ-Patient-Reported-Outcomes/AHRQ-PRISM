@@ -1,0 +1,36 @@
+<ion-content class="main-view">
+  <div class="overlay" (click)="dismiss()"></div>
+
+  <div class="modal_content">
+    <div class="grid-container">
+      <ion-grid no-padding>
+        <button ion-button clear (click)="dismiss()" class="modal-close">
+          <img src="../../assets/imgs/x-circle.png" />
+        </button>
+        <ion-row align-items-center>
+          <ion-col col-auto *ngIf="isPositive" style="padding-left: 20px;">
+              <img class="image" ALIGN="right" height="38px" src="../../assets/imgs/arrow-up-circle.png">
+          </ion-col>
+          <ion-col col-auto *ngIf="!isPositive" style="padding-left: 20px;">
+            <img class="image" ALIGN="right" height="38px" src="../../assets/imgs/arrow-down-circle.png">
+          </ion-col>
+          <ion-col col-auto *ngIf="isPositive">
+            <p class="score-positive">{{ scoreDifferenceAbs }}</p>
+          </ion-col>
+          <ion-col col-auto *ngIf="!isPositive">
+            <p class="score-negative">{{ scoreDifferenceAbs }}</p>
+          </ion-col>
+          <ion-col style="padding-left: 7px; padding-right: 20px;">
+            <p class="days-since">Since {{ timeSinceLast }} days ago</p>
+            <p *ngIf="highestYet" class="score-description">That's your highest score yet!</p>
+            <p *ngIf="lowestYet" class="score-description">That's your lowest score yet!</p>
+            <div *ngIf="!highestYet && !lowestYet" class="score-description">
+              <p *ngIf="!isPositive">{{ scoreDifferenceAbs }} lower than last time.</p>
+              <p *ngIf="isPositive">{{ scoreDifferenceAbs }} higher than last time.</p>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+  </div>
+</ion-content>

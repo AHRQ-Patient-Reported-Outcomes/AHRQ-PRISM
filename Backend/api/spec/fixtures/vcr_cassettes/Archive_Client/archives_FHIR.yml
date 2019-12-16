@@ -1,0 +1,1384 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://pkh-data-exchange-dev.herokuapp.com/QuestionnaireResponse
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "meta": {
+            "profile": [
+              "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaireresponse-adapt"
+            ]
+          },
+          "contained": [
+            {
+              "meta": {
+                "profile": [
+                  "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-adapt"
+                ]
+              },
+              "title": "",
+              "status": "active",
+              "subjectType": [
+                "Patient"
+              ],
+              "item": [
+                {
+                  "id": "EDDEP42",
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder",
+                      "valueInteger": 10
+                    }
+                  ],
+                  "linkId": "12FC21DA-6160-4ADF-9528-0A75A40E6FFA",
+                  "code": [
+                    {
+                      "system": "http://loinc.org",
+                      "code": "61974-2",
+                      "display": "In the past 7 daysI felt ignored by people"
+                    }
+                  ],
+                  "type": "group",
+                  "item": [
+                    {
+                      "extension": [
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder",
+                          "valueInteger": 1
+                        }
+                      ],
+                      "linkId": "8AB8BA58-3BB0-40B6-B656-C24F1169069B",
+                      "text": "In the past 7 days",
+                      "type": "display"
+                    },
+                    {
+                      "extension": [
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder",
+                          "valueInteger": 2
+                        }
+                      ],
+                      "linkId": "C0A7E2CA-103B-44AE-BC27-2DD3A04FD658",
+                      "text": "I felt ignored by people",
+                      "type": "choice",
+                      "option": [
+                        {
+                          "id": "8F1340A3-F1F7-4796-A04B-F7C6513D6A2E",
+                          "extension": [
+                            {
+                              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder",
+                              "valueInteger": 1
+                            }
+                          ],
+                          "valueCoding": {
+                            "system": "http://loinc.org",
+                            "code": "LA6270-8",
+                            "display": "Never"
+                          }
+                        },
+                        {
+                          "id": "A7A62F67-35B4-4E56-BAC5-8BEC3258C491",
+                          "extension": [
+                            {
+                              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder",
+                              "valueInteger": 2
+                            }
+                          ],
+                          "valueCoding": {
+                            "system": "http://loinc.org",
+                            "code": "LA10066-1",
+                            "display": "Rarely"
+                          }
+                        },
+                        {
+                          "id": "B9DC1040-BD83-496A-B7EF-2E6F62668006",
+                          "extension": [
+                            {
+                              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder",
+                              "valueInteger": 3
+                            }
+                          ],
+                          "valueCoding": {
+                            "system": "http://loinc.org",
+                            "code": "LA10082-8",
+                            "display": "Sometimes"
+                          }
+                        },
+                        {
+                          "id": "8BD5DE78-C3C4-403D-9AB6-E69289531604",
+                          "extension": [
+                            {
+                              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder",
+                              "valueInteger": 4
+                            }
+                          ],
+                          "valueCoding": {
+                            "system": "http://loinc.org",
+                            "code": "LA10044-8",
+                            "display": "Often"
+                          }
+                        },
+                        {
+                          "id": "D32BE80B-EBC7-4DE8-AC4C-38A7BEFC0691",
+                          "extension": [
+                            {
+                              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder",
+                              "valueInteger": 5
+                            }
+                          ],
+                          "valueCoding": {
+                            "system": "http://loinc.org",
+                            "code": "LA9933-8",
+                            "display": "Always"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "EDDEP30",
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder",
+                      "valueInteger": 9
+                    }
+                  ],
+                  "linkId": "72B9318A-8E9C-4C18-AC41-8A9011BE890E",
+                  "code": [
+                    {
+                      "system": "http://loinc.org",
+                      "code": "61968-4",
+                      "display": "In the past 7 daysI had trouble making decisions"
+                    }
+                  ],
+                  "type": "group",
+                  "item": [
+                    {
+                      "extension": [
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder",
+                          "valueInteger": 1
+                        }
+                      ],
+                      "linkId": "8AB8BA58-3BB0-40B6-B656-C24F1169069B",
+                      "text": "In the past 7 days",
+                      "type": "display"
+                    },
+                    {
+                      "extension": [
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder",
+                          "valueInteger": 2
+                        }
+                      ],
+                      "linkId": "D77489A4-71B2-4702-8EC7-7A154EDCE8B7",
+                      "text": "I had trouble making decisions",
+                      "type": "choice",
+                      "option": [
+                        {
+                          "id": "B667C92D-8BAB-4565-8F9E-4593B372108C",
+                          "extension": [
+                            {
+                              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder",
+                              "valueInteger": 1
+                            }
+                          ],
+                          "valueCoding": {
+                            "system": "http://loinc.org",
+                            "code": "LA6270-8",
+                            "display": "Never"
+                          }
+                        },
+                        {
+                          "id": "4E161999-98AE-4129-A1C5-B22D0A99E721",
+                          "extension": [
+                            {
+                              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder",
+                              "valueInteger": 2
+                            }
+                          ],
+                          "valueCoding": {
+                            "system": "http://loinc.org",
+                            "code": "LA10066-1",
+                            "display": "Rarely"
+                          }
+                        },
+                        {
+                          "id": "A6E83484-7EB8-45A5-BBE5-7AD69BB3F9EE",
+                          "extension": [
+                            {
+                              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder",
+                              "valueInteger": 3
+                            }
+                          ],
+                          "valueCoding": {
+                            "system": "http://loinc.org",
+                            "code": "LA10082-8",
+                            "display": "Sometimes"
+                          }
+                        },
+                        {
+                          "id": "96511215-35C8-4A47-9BD0-D2E57820BCEB",
+                          "extension": [
+                            {
+                              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder",
+                              "valueInteger": 4
+                            }
+                          ],
+                          "valueCoding": {
+                            "system": "http://loinc.org",
+                            "code": "LA10044-8",
+                            "display": "Often"
+                          }
+                        },
+                        {
+                          "id": "5E25C0E7-F8C5-4B51-BFCA-DFB10E2226E1",
+                          "extension": [
+                            {
+                              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder",
+                              "valueInteger": 5
+                            }
+                          ],
+                          "valueCoding": {
+                            "system": "http://loinc.org",
+                            "code": "LA9933-8",
+                            "display": "Always"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "EDDEP44",
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder",
+                      "valueInteger": 8
+                    }
+                  ],
+                  "linkId": "9E9B03F7-72BC-4876-9B2F-6892FAD1821E",
+                  "code": [
+                    {
+                      "system": "http://loinc.org",
+                      "code": "61975-9",
+                      "display": "In the past 7 daysI felt upset for no reason"
+                    }
+                  ],
+                  "type": "group",
+                  "item": [
+                    {
+                      "extension": [
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder",
+                          "valueInteger": 1
+                        }
+                      ],
+                      "linkId": "8AB8BA58-3BB0-40B6-B656-C24F1169069B",
+                      "text": "In the past 7 days",
+                      "type": "display"
+                    },
+                    {
+                      "extension": [
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder",
+                          "valueInteger": 2
+                        }
+                      ],
+                      "linkId": "8206A3E4-581F-4C14-9DC3-638519369AA5",
+                      "text": "I felt upset for no reason",
+                      "type": "choice",
+                      "option": [
+                        {
+                          "id": "6C34BB6D-09A5-4AE8-A261-047BA97479E5",
+                          "extension": [
+                            {
+                              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder",
+                              "valueInteger": 1
+                            }
+                          ],
+                          "valueCoding": {
+                            "system": "http://loinc.org",
+                            "code": "LA6270-8",
+                            "display": "Never"
+                          }
+                        },
+                        {
+                          "id": "EFE9921A-C626-451D-B54D-2A8A2600E196",
+                          "extension": [
+                            {
+                              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder",
+                              "valueInteger": 2
+                            }
+                          ],
+                          "valueCoding": {
+                            "system": "http://loinc.org",
+                            "code": "LA10066-1",
+                            "display": "Rarely"
+                          }
+                        },
+                        {
+                          "id": "0C9ABCA4-05CD-4536-B62C-DF255855FD1D",
+                          "extension": [
+                            {
+                              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder",
+                              "valueInteger": 3
+                            }
+                          ],
+                          "valueCoding": {
+                            "system": "http://loinc.org",
+                            "code": "LA10082-8",
+                            "display": "Sometimes"
+                          }
+                        },
+                        {
+                          "id": "EF5CCB6E-D1EC-4B0D-B59B-FA1F99BF1B62",
+                          "extension": [
+                            {
+                              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder",
+                              "valueInteger": 4
+                            }
+                          ],
+                          "valueCoding": {
+                            "system": "http://loinc.org",
+                            "code": "LA10044-8",
+                            "display": "Often"
+                          }
+                        },
+                        {
+                          "id": "A7264B42-8335-4B49-B339-E48843E6B8CC",
+                          "extension": [
+                            {
+                              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder",
+                              "valueInteger": 5
+                            }
+                          ],
+                          "valueCoding": {
+                            "system": "http://loinc.org",
+                            "code": "LA9933-8",
+                            "display": "Always"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "EDDEP45",
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder",
+                      "valueInteger": 7
+                    }
+                  ],
+                  "linkId": "047135F6-D58C-4E8C-B6C3-9AEDE63CA2E4",
+                  "code": [
+                    {
+                      "system": "http://loinc.org",
+                      "code": "61976-7",
+                      "display": "In the past 7 daysI felt that nothing was interesting"
+                    }
+                  ],
+                  "type": "group",
+                  "item": [
+                    {
+                      "extension": [
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder",
+                          "valueInteger": 1
+                        }
+                      ],
+                      "linkId": "8AB8BA58-3BB0-40B6-B656-C24F1169069B",
+                      "text": "In the past 7 days",
+                      "type": "display"
+                    },
+                    {
+                      "extension": [
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder",
+                          "valueInteger": 2
+                        }
+                      ],
+                      "linkId": "5CD82ED2-6FAC-4798-86B3-C4AE6BE17923",
+                      "text": "I felt that nothing was interesting",
+                      "type": "choice",
+                      "option": [
+                        {
+                          "id": "BF79A8FB-FAEB-41B2-A637-B0FF0BF2CBED",
+                          "extension": [
+                            {
+                              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder",
+                              "valueInteger": 1
+                            }
+                          ],
+                          "valueCoding": {
+                            "system": "http://loinc.org",
+                            "code": "LA6270-8",
+                            "display": "Never"
+                          }
+                        },
+                        {
+                          "id": "8FF5AB5F-6390-45B8-9501-14585F033944",
+                          "extension": [
+                            {
+                              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder",
+                              "valueInteger": 2
+                            }
+                          ],
+                          "valueCoding": {
+                            "system": "http://loinc.org",
+                            "code": "LA10066-1",
+                            "display": "Rarely"
+                          }
+                        },
+                        {
+                          "id": "1E553F6E-76AD-4663-98D0-C27E080757A9",
+                          "extension": [
+                            {
+                              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder",
+                              "valueInteger": 3
+                            }
+                          ],
+                          "valueCoding": {
+                            "system": "http://loinc.org",
+                            "code": "LA10082-8",
+                            "display": "Sometimes"
+                          }
+                        },
+                        {
+                          "id": "E88581F0-E4DA-409C-9159-102DD7FD8805",
+                          "extension": [
+                            {
+                              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder",
+                              "valueInteger": 4
+                            }
+                          ],
+                          "valueCoding": {
+                            "system": "http://loinc.org",
+                            "code": "LA10044-8",
+                            "display": "Often"
+                          }
+                        },
+                        {
+                          "id": "D62E262B-14A1-4D88-AE04-CD3A68F11D4A",
+                          "extension": [
+                            {
+                              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder",
+                              "valueInteger": 5
+                            }
+                          ],
+                          "valueCoding": {
+                            "system": "http://loinc.org",
+                            "code": "LA9933-8",
+                            "display": "Always"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "EDDEP09",
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder",
+                      "valueInteger": 6
+                    }
+                  ],
+                  "linkId": "02187B69-DE67-4023-B391-1F48B26A411B",
+                  "code": [
+                    {
+                      "system": "http://loinc.org",
+                      "code": "61957-7",
+                      "display": "In the past 7 daysI felt that nothing could cheer me up"
+                    }
+                  ],
+                  "type": "group",
+                  "item": [
+                    {
+                      "extension": [
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder",
+                          "valueInteger": 1
+                        }
+                      ],
+                      "linkId": "8AB8BA58-3BB0-40B6-B656-C24F1169069B",
+                      "text": "In the past 7 days",
+                      "type": "display"
+                    },
+                    {
+                      "extension": [
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder",
+                          "valueInteger": 2
+                        }
+                      ],
+                      "linkId": "1C3997F8-39C1-412F-8A71-1AD98857CC75",
+                      "text": "I felt that nothing could cheer me up",
+                      "type": "choice",
+                      "option": [
+                        {
+                          "id": "099C3455-AC94-47FF-953C-20071BF6ACBC",
+                          "extension": [
+                            {
+                              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder",
+                              "valueInteger": 1
+                            }
+                          ],
+                          "valueCoding": {
+                            "system": "http://loinc.org",
+                            "code": "LA6270-8",
+                            "display": "Never"
+                          }
+                        },
+                        {
+                          "id": "77F93412-97F2-4623-AC6D-5D3CB2A113DF",
+                          "extension": [
+                            {
+                              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder",
+                              "valueInteger": 2
+                            }
+                          ],
+                          "valueCoding": {
+                            "system": "http://loinc.org",
+                            "code": "LA10066-1",
+                            "display": "Rarely"
+                          }
+                        },
+                        {
+                          "id": "BD92EE39-7C21-4329-9F16-309C6EA9690F",
+                          "extension": [
+                            {
+                              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder",
+                              "valueInteger": 3
+                            }
+                          ],
+                          "valueCoding": {
+                            "system": "http://loinc.org",
+                            "code": "LA10082-8",
+                            "display": "Sometimes"
+                          }
+                        },
+                        {
+                          "id": "07E98BEE-1C5E-4648-85F1-D06571E85954",
+                          "extension": [
+                            {
+                              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder",
+                              "valueInteger": 4
+                            }
+                          ],
+                          "valueCoding": {
+                            "system": "http://loinc.org",
+                            "code": "LA10044-8",
+                            "display": "Often"
+                          }
+                        },
+                        {
+                          "id": "3EE3FC13-B0B1-4057-B70A-87E42A4CF33E",
+                          "extension": [
+                            {
+                              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder",
+                              "valueInteger": 5
+                            }
+                          ],
+                          "valueCoding": {
+                            "system": "http://loinc.org",
+                            "code": "LA9933-8",
+                            "display": "Always"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "EDDEP39",
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder",
+                      "valueInteger": 5
+                    }
+                  ],
+                  "linkId": "1930C3B4-DBD1-4D23-875C-AE6E463D08A5",
+                  "code": [
+                    {
+                      "system": "http://loinc.org",
+                      "code": "61972-6",
+                      "display": "In the past 7 daysI felt I had no reason for living"
+                    }
+                  ],
+                  "type": "group",
+                  "item": [
+                    {
+                      "extension": [
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder",
+                          "valueInteger": 1
+                        }
+                      ],
+                      "linkId": "8AB8BA58-3BB0-40B6-B656-C24F1169069B",
+                      "text": "In the past 7 days",
+                      "type": "display"
+                    },
+                    {
+                      "extension": [
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder",
+                          "valueInteger": 2
+                        }
+                      ],
+                      "linkId": "3CA7FFD5-F13E-4871-B8D2-6C76C5312EB0",
+                      "text": "I felt I had no reason for living",
+                      "type": "choice",
+                      "option": [
+                        {
+                          "id": "AB746F47-B49C-42DF-94C3-3B4EC4517C9C",
+                          "extension": [
+                            {
+                              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder",
+                              "valueInteger": 1
+                            }
+                          ],
+                          "valueCoding": {
+                            "system": "http://loinc.org",
+                            "code": "LA6270-8",
+                            "display": "Never"
+                          }
+                        },
+                        {
+                          "id": "CA9D4342-D6DF-4B55-B2CD-DF40E14F9E1B",
+                          "extension": [
+                            {
+                              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder",
+                              "valueInteger": 2
+                            }
+                          ],
+                          "valueCoding": {
+                            "system": "http://loinc.org",
+                            "code": "LA10066-1",
+                            "display": "Rarely"
+                          }
+                        },
+                        {
+                          "id": "3E51F6D5-2F62-4A08-B338-DEBBF5A13D7D",
+                          "extension": [
+                            {
+                              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder",
+                              "valueInteger": 3
+                            }
+                          ],
+                          "valueCoding": {
+                            "system": "http://loinc.org",
+                            "code": "LA10082-8",
+                            "display": "Sometimes"
+                          }
+                        },
+                        {
+                          "id": "5D4F05A6-C02C-4532-A8BB-9DB778C507E7",
+                          "extension": [
+                            {
+                              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder",
+                              "valueInteger": 4
+                            }
+                          ],
+                          "valueCoding": {
+                            "system": "http://loinc.org",
+                            "code": "LA10044-8",
+                            "display": "Often"
+                          }
+                        },
+                        {
+                          "id": "C56AE9A5-A094-4633-AAD0-7A9568AFEEBC",
+                          "extension": [
+                            {
+                              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder",
+                              "valueInteger": 5
+                            }
+                          ],
+                          "valueCoding": {
+                            "system": "http://loinc.org",
+                            "code": "LA9933-8",
+                            "display": "Always"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "EDDEP06",
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder",
+                      "valueInteger": 4
+                    }
+                  ],
+                  "linkId": "4CCE9B01-2906-4081-B697-1AD7BAA891AF",
+                  "code": [
+                    {
+                      "system": "http://loinc.org",
+                      "code": "61955-1",
+                      "display": "In the past 7 daysI felt helpless"
+                    }
+                  ],
+                  "type": "group",
+                  "item": [
+                    {
+                      "extension": [
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder",
+                          "valueInteger": 1
+                        }
+                      ],
+                      "linkId": "8AB8BA58-3BB0-40B6-B656-C24F1169069B",
+                      "text": "In the past 7 days",
+                      "type": "display"
+                    },
+                    {
+                      "extension": [
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder",
+                          "valueInteger": 2
+                        }
+                      ],
+                      "linkId": "3947F2DE-375E-4AFA-9623-16E65B800E22",
+                      "text": "I felt helpless",
+                      "type": "choice",
+                      "option": [
+                        {
+                          "id": "81DC1AF0-009C-4F4A-8238-05AC921D400E",
+                          "extension": [
+                            {
+                              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder",
+                              "valueInteger": 1
+                            }
+                          ],
+                          "valueCoding": {
+                            "system": "http://loinc.org",
+                            "code": "LA6270-8",
+                            "display": "Never"
+                          }
+                        },
+                        {
+                          "id": "350BE304-7826-4C23-8003-7B801E1497F2",
+                          "extension": [
+                            {
+                              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder",
+                              "valueInteger": 2
+                            }
+                          ],
+                          "valueCoding": {
+                            "system": "http://loinc.org",
+                            "code": "LA10066-1",
+                            "display": "Rarely"
+                          }
+                        },
+                        {
+                          "id": "34134169-7A2E-4CF9-82F9-EE239497594F",
+                          "extension": [
+                            {
+                              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder",
+                              "valueInteger": 3
+                            }
+                          ],
+                          "valueCoding": {
+                            "system": "http://loinc.org",
+                            "code": "LA10082-8",
+                            "display": "Sometimes"
+                          }
+                        },
+                        {
+                          "id": "3F4D4B43-2028-45A1-A3C2-0C94E0D0DCCE",
+                          "extension": [
+                            {
+                              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder",
+                              "valueInteger": 4
+                            }
+                          ],
+                          "valueCoding": {
+                            "system": "http://loinc.org",
+                            "code": "LA10044-8",
+                            "display": "Often"
+                          }
+                        },
+                        {
+                          "id": "6F414A1B-6BDD-4297-AA06-8A547D659D6E",
+                          "extension": [
+                            {
+                              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder",
+                              "valueInteger": 5
+                            }
+                          ],
+                          "valueCoding": {
+                            "system": "http://loinc.org",
+                            "code": "LA9933-8",
+                            "display": "Always"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "EDDEP04",
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder",
+                      "valueInteger": 3
+                    }
+                  ],
+                  "linkId": "20023145-A4E1-4347-8128-BE19F6E8A739",
+                  "code": [
+                    {
+                      "system": "http://loinc.org",
+                      "code": "61953-6",
+                      "display": "In the past 7 daysI felt worthless"
+                    }
+                  ],
+                  "type": "group",
+                  "item": [
+                    {
+                      "extension": [
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder",
+                          "valueInteger": 1
+                        }
+                      ],
+                      "linkId": "8AB8BA58-3BB0-40B6-B656-C24F1169069B",
+                      "text": "In the past 7 days",
+                      "type": "display"
+                    },
+                    {
+                      "extension": [
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder",
+                          "valueInteger": 2
+                        }
+                      ],
+                      "linkId": "A045BC31-F983-441A-BAF6-9929BE1D9DCB",
+                      "text": "I felt worthless",
+                      "type": "choice",
+                      "option": [
+                        {
+                          "id": "A07357E9-4A7D-4292-985A-8ADF2AA6CCA3",
+                          "extension": [
+                            {
+                              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder",
+                              "valueInteger": 1
+                            }
+                          ],
+                          "valueCoding": {
+                            "system": "http://loinc.org",
+                            "code": "LA6270-8",
+                            "display": "Never"
+                          }
+                        },
+                        {
+                          "id": "E38D4348-A7CA-4506-847F-F6919DBEF206",
+                          "extension": [
+                            {
+                              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder",
+                              "valueInteger": 2
+                            }
+                          ],
+                          "valueCoding": {
+                            "system": "http://loinc.org",
+                            "code": "LA10066-1",
+                            "display": "Rarely"
+                          }
+                        },
+                        {
+                          "id": "A8B946F2-5485-4789-9CA3-6BF3EE790752",
+                          "extension": [
+                            {
+                              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder",
+                              "valueInteger": 3
+                            }
+                          ],
+                          "valueCoding": {
+                            "system": "http://loinc.org",
+                            "code": "LA10082-8",
+                            "display": "Sometimes"
+                          }
+                        },
+                        {
+                          "id": "8EE5E4F3-E2C8-4759-A3AC-2CBFE28F60D0",
+                          "extension": [
+                            {
+                              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder",
+                              "valueInteger": 4
+                            }
+                          ],
+                          "valueCoding": {
+                            "system": "http://loinc.org",
+                            "code": "LA10044-8",
+                            "display": "Often"
+                          }
+                        },
+                        {
+                          "id": "8ED14715-5A33-47FF-AEC2-8DAAEA20571E",
+                          "extension": [
+                            {
+                              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder",
+                              "valueInteger": 5
+                            }
+                          ],
+                          "valueCoding": {
+                            "system": "http://loinc.org",
+                            "code": "LA9933-8",
+                            "display": "Always"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "EDDEP41",
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder",
+                      "valueInteger": 2
+                    }
+                  ],
+                  "linkId": "F1BBB664-7C68-49EC-AB50-767CDFD947BA",
+                  "code": [
+                    {
+                      "system": "http://loinc.org",
+                      "code": "61973-4",
+                      "display": "In the past 7 daysI felt hopeless"
+                    }
+                  ],
+                  "type": "group",
+                  "item": [
+                    {
+                      "extension": [
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder",
+                          "valueInteger": 1
+                        }
+                      ],
+                      "linkId": "8AB8BA58-3BB0-40B6-B656-C24F1169069B",
+                      "text": "In the past 7 days",
+                      "type": "display"
+                    },
+                    {
+                      "extension": [
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder",
+                          "valueInteger": 2
+                        }
+                      ],
+                      "linkId": "D8D3DC16-AA2B-4B59-B216-EAD42223E476",
+                      "text": "I felt hopeless",
+                      "type": "choice",
+                      "option": [
+                        {
+                          "id": "CAC523E3-B5BC-4F97-97B8-275ECAD15856",
+                          "extension": [
+                            {
+                              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder",
+                              "valueInteger": 1
+                            }
+                          ],
+                          "valueCoding": {
+                            "system": "http://loinc.org",
+                            "code": "LA6270-8",
+                            "display": "Never"
+                          }
+                        },
+                        {
+                          "id": "0B55633D-A218-4A8A-B149-983218FA7E14",
+                          "extension": [
+                            {
+                              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder",
+                              "valueInteger": 2
+                            }
+                          ],
+                          "valueCoding": {
+                            "system": "http://loinc.org",
+                            "code": "LA10066-1",
+                            "display": "Rarely"
+                          }
+                        },
+                        {
+                          "id": "BB3E3949-94BF-4D49-A3AB-416605DE9AF1",
+                          "extension": [
+                            {
+                              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder",
+                              "valueInteger": 3
+                            }
+                          ],
+                          "valueCoding": {
+                            "system": "http://loinc.org",
+                            "code": "LA10082-8",
+                            "display": "Sometimes"
+                          }
+                        },
+                        {
+                          "id": "A8CE7010-2E45-4DEC-A6BC-5F997CA202CF",
+                          "extension": [
+                            {
+                              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder",
+                              "valueInteger": 4
+                            }
+                          ],
+                          "valueCoding": {
+                            "system": "http://loinc.org",
+                            "code": "LA10044-8",
+                            "display": "Often"
+                          }
+                        },
+                        {
+                          "id": "F5B508F6-36EF-44FB-80F4-E975B3905A1B",
+                          "extension": [
+                            {
+                              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder",
+                              "valueInteger": 5
+                            }
+                          ],
+                          "valueCoding": {
+                            "system": "http://loinc.org",
+                            "code": "LA9933-8",
+                            "display": "Always"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "EDDEP29",
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder",
+                      "valueInteger": 1
+                    }
+                  ],
+                  "linkId": "DEE2D9CA-0094-492A-AA25-D4D53D426976",
+                  "code": [
+                    {
+                      "system": "http://loinc.org",
+                      "code": "61967-6",
+                      "display": "In the past 7 daysI felt depressed"
+                    }
+                  ],
+                  "type": "group",
+                  "item": [
+                    {
+                      "extension": [
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder",
+                          "valueInteger": 1
+                        }
+                      ],
+                      "linkId": "8AB8BA58-3BB0-40B6-B656-C24F1169069B",
+                      "text": "In the past 7 days",
+                      "type": "display"
+                    },
+                    {
+                      "extension": [
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder",
+                          "valueInteger": 2
+                        }
+                      ],
+                      "linkId": "C24FEEED-B48C-4BD4-972B-5AB30A5A6353",
+                      "text": "I felt depressed",
+                      "type": "choice",
+                      "option": [
+                        {
+                          "id": "BF2FFE4B-53FA-45B7-8464-58A1E84B49DD",
+                          "extension": [
+                            {
+                              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder",
+                              "valueInteger": 1
+                            }
+                          ],
+                          "valueCoding": {
+                            "system": "http://loinc.org",
+                            "code": "LA6270-8",
+                            "display": "Never"
+                          }
+                        },
+                        {
+                          "id": "D96D8FBD-C726-4D34-8C3C-2B4377C0438B",
+                          "extension": [
+                            {
+                              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder",
+                              "valueInteger": 2
+                            }
+                          ],
+                          "valueCoding": {
+                            "system": "http://loinc.org",
+                            "code": "LA10066-1",
+                            "display": "Rarely"
+                          }
+                        },
+                        {
+                          "id": "23EC60A7-53E7-4BE2-BCDB-2D70365D0EF7",
+                          "extension": [
+                            {
+                              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder",
+                              "valueInteger": 3
+                            }
+                          ],
+                          "valueCoding": {
+                            "system": "http://loinc.org",
+                            "code": "LA10082-8",
+                            "display": "Sometimes"
+                          }
+                        },
+                        {
+                          "id": "67032EB7-497B-4021-91CB-4DBB5C995FED",
+                          "extension": [
+                            {
+                              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder",
+                              "valueInteger": 4
+                            }
+                          ],
+                          "valueCoding": {
+                            "system": "http://loinc.org",
+                            "code": "LA10044-8",
+                            "display": "Often"
+                          }
+                        },
+                        {
+                          "id": "B85C15C3-C28F-4C5D-8869-C09C3254D562",
+                          "extension": [
+                            {
+                              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder",
+                              "valueInteger": 5
+                            }
+                          ],
+                          "valueCoding": {
+                            "system": "http://loinc.org",
+                            "code": "LA9933-8",
+                            "display": "Always"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "resourceType": "Questionnaire"
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-expirationTime",
+              "valueDate": "2019-05-16"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-finishedTime",
+              "valueDate": "2019-05-13"
+            }
+          ],
+          "status": "in-progress",
+          "subject": {
+            "reference": "Patient/524d6fcc-9cec-44f7-82b7-7b0253d13a46"
+          },
+          "authored": "2019-05-13",
+          "item": [
+            {
+              "linkId": "DEE2D9CA-0094-492A-AA25-D4D53D426976",
+              "answer": [
+                {
+                  "valueCoding": {
+                    "system": "http://loinc.org",
+                    "code": "LA9933-8",
+                    "display": "Always"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "F1BBB664-7C68-49EC-AB50-767CDFD947BA",
+              "answer": [
+                {
+                  "valueCoding": {
+                    "system": "http://loinc.org",
+                    "code": "LA9933-8",
+                    "display": "Always"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "20023145-A4E1-4347-8128-BE19F6E8A739",
+              "answer": [
+                {
+                  "valueCoding": {
+                    "system": "http://loinc.org",
+                    "code": "LA9933-8",
+                    "display": "Always"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "4CCE9B01-2906-4081-B697-1AD7BAA891AF",
+              "answer": [
+                {
+                  "valueCoding": {
+                    "system": "http://loinc.org",
+                    "code": "LA9933-8",
+                    "display": "Always"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "1930C3B4-DBD1-4D23-875C-AE6E463D08A5",
+              "answer": [
+                {
+                  "valueCoding": {
+                    "system": "http://loinc.org",
+                    "code": "LA9933-8",
+                    "display": "Always"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "02187B69-DE67-4023-B391-1F48B26A411B",
+              "answer": [
+                {
+                  "valueCoding": {
+                    "system": "http://loinc.org",
+                    "code": "LA9933-8",
+                    "display": "Always"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "047135F6-D58C-4E8C-B6C3-9AEDE63CA2E4",
+              "answer": [
+                {
+                  "valueCoding": {
+                    "system": "http://loinc.org",
+                    "code": "LA9933-8",
+                    "display": "Always"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "9E9B03F7-72BC-4876-9B2F-6892FAD1821E",
+              "answer": [
+                {
+                  "valueCoding": {
+                    "system": "http://loinc.org",
+                    "code": "LA9933-8",
+                    "display": "Always"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "72B9318A-8E9C-4C18-AC41-8A9011BE890E",
+              "answer": [
+                {
+                  "valueCoding": {
+                    "system": "http://loinc.org",
+                    "code": "LA9933-8",
+                    "display": "Always"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "12FC21DA-6160-4ADF-9528-0A75A40E6FFA",
+              "answer": [
+                {
+                  "valueCoding": {
+                    "system": "http://loinc.org",
+                    "code": "LA9933-8",
+                    "display": "Always"
+                  }
+                }
+              ]
+            }
+          ],
+          "resourceType": "QuestionnaireResponse"
+        }
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Content-Type:
+      - application/json;charset=utf-8
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Wed, 26 Jun 2019 17:26:33 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"3afd4a1032cfe6aae1e799cefd64eb22"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - a6517150-1966-4a33-817e-e0ac864a196c
+      X-Runtime:
+      - '0.753666'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      Vary:
+      - Origin
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"authored":"2019-05-13","contained":[{"item":[{"code":[{"code":"61974-2","display":"In
+        the past 7 daysI felt ignored by people","system":"http://loinc.org"}],"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder","valueInteger":10}],"id":"EDDEP42","item":[{"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder","valueInteger":1}],"linkId":"8AB8BA58-3BB0-40B6-B656-C24F1169069B","text":"In
+        the past 7 days","type":"display"},{"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder","valueInteger":2}],"linkId":"C0A7E2CA-103B-44AE-BC27-2DD3A04FD658","option":[{"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder","valueInteger":1}],"id":"8F1340A3-F1F7-4796-A04B-F7C6513D6A2E","valueCoding":{"code":"LA6270-8","display":"Never","system":"http://loinc.org"}},{"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder","valueInteger":2}],"id":"A7A62F67-35B4-4E56-BAC5-8BEC3258C491","valueCoding":{"code":"LA10066-1","display":"Rarely","system":"http://loinc.org"}},{"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder","valueInteger":3}],"id":"B9DC1040-BD83-496A-B7EF-2E6F62668006","valueCoding":{"code":"LA10082-8","display":"Sometimes","system":"http://loinc.org"}},{"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder","valueInteger":4}],"id":"8BD5DE78-C3C4-403D-9AB6-E69289531604","valueCoding":{"code":"LA10044-8","display":"Often","system":"http://loinc.org"}},{"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder","valueInteger":5}],"id":"D32BE80B-EBC7-4DE8-AC4C-38A7BEFC0691","valueCoding":{"code":"LA9933-8","display":"Always","system":"http://loinc.org"}}],"text":"I
+        felt ignored by people","type":"choice"}],"linkId":"12FC21DA-6160-4ADF-9528-0A75A40E6FFA","type":"group"},{"code":[{"code":"61968-4","display":"In
+        the past 7 daysI had trouble making decisions","system":"http://loinc.org"}],"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder","valueInteger":9}],"id":"EDDEP30","item":[{"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder","valueInteger":1}],"linkId":"8AB8BA58-3BB0-40B6-B656-C24F1169069B","text":"In
+        the past 7 days","type":"display"},{"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder","valueInteger":2}],"linkId":"D77489A4-71B2-4702-8EC7-7A154EDCE8B7","option":[{"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder","valueInteger":1}],"id":"B667C92D-8BAB-4565-8F9E-4593B372108C","valueCoding":{"code":"LA6270-8","display":"Never","system":"http://loinc.org"}},{"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder","valueInteger":2}],"id":"4E161999-98AE-4129-A1C5-B22D0A99E721","valueCoding":{"code":"LA10066-1","display":"Rarely","system":"http://loinc.org"}},{"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder","valueInteger":3}],"id":"A6E83484-7EB8-45A5-BBE5-7AD69BB3F9EE","valueCoding":{"code":"LA10082-8","display":"Sometimes","system":"http://loinc.org"}},{"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder","valueInteger":4}],"id":"96511215-35C8-4A47-9BD0-D2E57820BCEB","valueCoding":{"code":"LA10044-8","display":"Often","system":"http://loinc.org"}},{"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder","valueInteger":5}],"id":"5E25C0E7-F8C5-4B51-BFCA-DFB10E2226E1","valueCoding":{"code":"LA9933-8","display":"Always","system":"http://loinc.org"}}],"text":"I
+        had trouble making decisions","type":"choice"}],"linkId":"72B9318A-8E9C-4C18-AC41-8A9011BE890E","type":"group"},{"code":[{"code":"61975-9","display":"In
+        the past 7 daysI felt upset for no reason","system":"http://loinc.org"}],"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder","valueInteger":8}],"id":"EDDEP44","item":[{"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder","valueInteger":1}],"linkId":"8AB8BA58-3BB0-40B6-B656-C24F1169069B","text":"In
+        the past 7 days","type":"display"},{"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder","valueInteger":2}],"linkId":"8206A3E4-581F-4C14-9DC3-638519369AA5","option":[{"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder","valueInteger":1}],"id":"6C34BB6D-09A5-4AE8-A261-047BA97479E5","valueCoding":{"code":"LA6270-8","display":"Never","system":"http://loinc.org"}},{"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder","valueInteger":2}],"id":"EFE9921A-C626-451D-B54D-2A8A2600E196","valueCoding":{"code":"LA10066-1","display":"Rarely","system":"http://loinc.org"}},{"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder","valueInteger":3}],"id":"0C9ABCA4-05CD-4536-B62C-DF255855FD1D","valueCoding":{"code":"LA10082-8","display":"Sometimes","system":"http://loinc.org"}},{"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder","valueInteger":4}],"id":"EF5CCB6E-D1EC-4B0D-B59B-FA1F99BF1B62","valueCoding":{"code":"LA10044-8","display":"Often","system":"http://loinc.org"}},{"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder","valueInteger":5}],"id":"A7264B42-8335-4B49-B339-E48843E6B8CC","valueCoding":{"code":"LA9933-8","display":"Always","system":"http://loinc.org"}}],"text":"I
+        felt upset for no reason","type":"choice"}],"linkId":"9E9B03F7-72BC-4876-9B2F-6892FAD1821E","type":"group"},{"code":[{"code":"61976-7","display":"In
+        the past 7 daysI felt that nothing was interesting","system":"http://loinc.org"}],"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder","valueInteger":7}],"id":"EDDEP45","item":[{"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder","valueInteger":1}],"linkId":"8AB8BA58-3BB0-40B6-B656-C24F1169069B","text":"In
+        the past 7 days","type":"display"},{"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder","valueInteger":2}],"linkId":"5CD82ED2-6FAC-4798-86B3-C4AE6BE17923","option":[{"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder","valueInteger":1}],"id":"BF79A8FB-FAEB-41B2-A637-B0FF0BF2CBED","valueCoding":{"code":"LA6270-8","display":"Never","system":"http://loinc.org"}},{"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder","valueInteger":2}],"id":"8FF5AB5F-6390-45B8-9501-14585F033944","valueCoding":{"code":"LA10066-1","display":"Rarely","system":"http://loinc.org"}},{"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder","valueInteger":3}],"id":"1E553F6E-76AD-4663-98D0-C27E080757A9","valueCoding":{"code":"LA10082-8","display":"Sometimes","system":"http://loinc.org"}},{"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder","valueInteger":4}],"id":"E88581F0-E4DA-409C-9159-102DD7FD8805","valueCoding":{"code":"LA10044-8","display":"Often","system":"http://loinc.org"}},{"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder","valueInteger":5}],"id":"D62E262B-14A1-4D88-AE04-CD3A68F11D4A","valueCoding":{"code":"LA9933-8","display":"Always","system":"http://loinc.org"}}],"text":"I
+        felt that nothing was interesting","type":"choice"}],"linkId":"047135F6-D58C-4E8C-B6C3-9AEDE63CA2E4","type":"group"},{"code":[{"code":"61957-7","display":"In
+        the past 7 daysI felt that nothing could cheer me up","system":"http://loinc.org"}],"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder","valueInteger":6}],"id":"EDDEP09","item":[{"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder","valueInteger":1}],"linkId":"8AB8BA58-3BB0-40B6-B656-C24F1169069B","text":"In
+        the past 7 days","type":"display"},{"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder","valueInteger":2}],"linkId":"1C3997F8-39C1-412F-8A71-1AD98857CC75","option":[{"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder","valueInteger":1}],"id":"099C3455-AC94-47FF-953C-20071BF6ACBC","valueCoding":{"code":"LA6270-8","display":"Never","system":"http://loinc.org"}},{"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder","valueInteger":2}],"id":"77F93412-97F2-4623-AC6D-5D3CB2A113DF","valueCoding":{"code":"LA10066-1","display":"Rarely","system":"http://loinc.org"}},{"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder","valueInteger":3}],"id":"BD92EE39-7C21-4329-9F16-309C6EA9690F","valueCoding":{"code":"LA10082-8","display":"Sometimes","system":"http://loinc.org"}},{"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder","valueInteger":4}],"id":"07E98BEE-1C5E-4648-85F1-D06571E85954","valueCoding":{"code":"LA10044-8","display":"Often","system":"http://loinc.org"}},{"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder","valueInteger":5}],"id":"3EE3FC13-B0B1-4057-B70A-87E42A4CF33E","valueCoding":{"code":"LA9933-8","display":"Always","system":"http://loinc.org"}}],"text":"I
+        felt that nothing could cheer me up","type":"choice"}],"linkId":"02187B69-DE67-4023-B391-1F48B26A411B","type":"group"},{"code":[{"code":"61972-6","display":"In
+        the past 7 daysI felt I had no reason for living","system":"http://loinc.org"}],"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder","valueInteger":5}],"id":"EDDEP39","item":[{"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder","valueInteger":1}],"linkId":"8AB8BA58-3BB0-40B6-B656-C24F1169069B","text":"In
+        the past 7 days","type":"display"},{"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder","valueInteger":2}],"linkId":"3CA7FFD5-F13E-4871-B8D2-6C76C5312EB0","option":[{"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder","valueInteger":1}],"id":"AB746F47-B49C-42DF-94C3-3B4EC4517C9C","valueCoding":{"code":"LA6270-8","display":"Never","system":"http://loinc.org"}},{"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder","valueInteger":2}],"id":"CA9D4342-D6DF-4B55-B2CD-DF40E14F9E1B","valueCoding":{"code":"LA10066-1","display":"Rarely","system":"http://loinc.org"}},{"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder","valueInteger":3}],"id":"3E51F6D5-2F62-4A08-B338-DEBBF5A13D7D","valueCoding":{"code":"LA10082-8","display":"Sometimes","system":"http://loinc.org"}},{"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder","valueInteger":4}],"id":"5D4F05A6-C02C-4532-A8BB-9DB778C507E7","valueCoding":{"code":"LA10044-8","display":"Often","system":"http://loinc.org"}},{"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder","valueInteger":5}],"id":"C56AE9A5-A094-4633-AAD0-7A9568AFEEBC","valueCoding":{"code":"LA9933-8","display":"Always","system":"http://loinc.org"}}],"text":"I
+        felt I had no reason for living","type":"choice"}],"linkId":"1930C3B4-DBD1-4D23-875C-AE6E463D08A5","type":"group"},{"code":[{"code":"61955-1","display":"In
+        the past 7 daysI felt helpless","system":"http://loinc.org"}],"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder","valueInteger":4}],"id":"EDDEP06","item":[{"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder","valueInteger":1}],"linkId":"8AB8BA58-3BB0-40B6-B656-C24F1169069B","text":"In
+        the past 7 days","type":"display"},{"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder","valueInteger":2}],"linkId":"3947F2DE-375E-4AFA-9623-16E65B800E22","option":[{"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder","valueInteger":1}],"id":"81DC1AF0-009C-4F4A-8238-05AC921D400E","valueCoding":{"code":"LA6270-8","display":"Never","system":"http://loinc.org"}},{"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder","valueInteger":2}],"id":"350BE304-7826-4C23-8003-7B801E1497F2","valueCoding":{"code":"LA10066-1","display":"Rarely","system":"http://loinc.org"}},{"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder","valueInteger":3}],"id":"34134169-7A2E-4CF9-82F9-EE239497594F","valueCoding":{"code":"LA10082-8","display":"Sometimes","system":"http://loinc.org"}},{"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder","valueInteger":4}],"id":"3F4D4B43-2028-45A1-A3C2-0C94E0D0DCCE","valueCoding":{"code":"LA10044-8","display":"Often","system":"http://loinc.org"}},{"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder","valueInteger":5}],"id":"6F414A1B-6BDD-4297-AA06-8A547D659D6E","valueCoding":{"code":"LA9933-8","display":"Always","system":"http://loinc.org"}}],"text":"I
+        felt helpless","type":"choice"}],"linkId":"4CCE9B01-2906-4081-B697-1AD7BAA891AF","type":"group"},{"code":[{"code":"61953-6","display":"In
+        the past 7 daysI felt worthless","system":"http://loinc.org"}],"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder","valueInteger":3}],"id":"EDDEP04","item":[{"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder","valueInteger":1}],"linkId":"8AB8BA58-3BB0-40B6-B656-C24F1169069B","text":"In
+        the past 7 days","type":"display"},{"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder","valueInteger":2}],"linkId":"A045BC31-F983-441A-BAF6-9929BE1D9DCB","option":[{"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder","valueInteger":1}],"id":"A07357E9-4A7D-4292-985A-8ADF2AA6CCA3","valueCoding":{"code":"LA6270-8","display":"Never","system":"http://loinc.org"}},{"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder","valueInteger":2}],"id":"E38D4348-A7CA-4506-847F-F6919DBEF206","valueCoding":{"code":"LA10066-1","display":"Rarely","system":"http://loinc.org"}},{"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder","valueInteger":3}],"id":"A8B946F2-5485-4789-9CA3-6BF3EE790752","valueCoding":{"code":"LA10082-8","display":"Sometimes","system":"http://loinc.org"}},{"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder","valueInteger":4}],"id":"8EE5E4F3-E2C8-4759-A3AC-2CBFE28F60D0","valueCoding":{"code":"LA10044-8","display":"Often","system":"http://loinc.org"}},{"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder","valueInteger":5}],"id":"8ED14715-5A33-47FF-AEC2-8DAAEA20571E","valueCoding":{"code":"LA9933-8","display":"Always","system":"http://loinc.org"}}],"text":"I
+        felt worthless","type":"choice"}],"linkId":"20023145-A4E1-4347-8128-BE19F6E8A739","type":"group"},{"code":[{"code":"61973-4","display":"In
+        the past 7 daysI felt hopeless","system":"http://loinc.org"}],"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder","valueInteger":2}],"id":"EDDEP41","item":[{"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder","valueInteger":1}],"linkId":"8AB8BA58-3BB0-40B6-B656-C24F1169069B","text":"In
+        the past 7 days","type":"display"},{"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder","valueInteger":2}],"linkId":"D8D3DC16-AA2B-4B59-B216-EAD42223E476","option":[{"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder","valueInteger":1}],"id":"CAC523E3-B5BC-4F97-97B8-275ECAD15856","valueCoding":{"code":"LA6270-8","display":"Never","system":"http://loinc.org"}},{"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder","valueInteger":2}],"id":"0B55633D-A218-4A8A-B149-983218FA7E14","valueCoding":{"code":"LA10066-1","display":"Rarely","system":"http://loinc.org"}},{"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder","valueInteger":3}],"id":"BB3E3949-94BF-4D49-A3AB-416605DE9AF1","valueCoding":{"code":"LA10082-8","display":"Sometimes","system":"http://loinc.org"}},{"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder","valueInteger":4}],"id":"A8CE7010-2E45-4DEC-A6BC-5F997CA202CF","valueCoding":{"code":"LA10044-8","display":"Often","system":"http://loinc.org"}},{"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder","valueInteger":5}],"id":"F5B508F6-36EF-44FB-80F4-E975B3905A1B","valueCoding":{"code":"LA9933-8","display":"Always","system":"http://loinc.org"}}],"text":"I
+        felt hopeless","type":"choice"}],"linkId":"F1BBB664-7C68-49EC-AB50-767CDFD947BA","type":"group"},{"code":[{"code":"61967-6","display":"In
+        the past 7 daysI felt depressed","system":"http://loinc.org"}],"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder","valueInteger":1}],"id":"EDDEP29","item":[{"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder","valueInteger":1}],"linkId":"8AB8BA58-3BB0-40B6-B656-C24F1169069B","text":"In
+        the past 7 days","type":"display"},{"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder","valueInteger":2}],"linkId":"C24FEEED-B48C-4BD4-972B-5AB30A5A6353","option":[{"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder","valueInteger":1}],"id":"BF2FFE4B-53FA-45B7-8464-58A1E84B49DD","valueCoding":{"code":"LA6270-8","display":"Never","system":"http://loinc.org"}},{"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder","valueInteger":2}],"id":"D96D8FBD-C726-4D34-8C3C-2B4377C0438B","valueCoding":{"code":"LA10066-1","display":"Rarely","system":"http://loinc.org"}},{"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder","valueInteger":3}],"id":"23EC60A7-53E7-4BE2-BCDB-2D70365D0EF7","valueCoding":{"code":"LA10082-8","display":"Sometimes","system":"http://loinc.org"}},{"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder","valueInteger":4}],"id":"67032EB7-497B-4021-91CB-4DBB5C995FED","valueCoding":{"code":"LA10044-8","display":"Often","system":"http://loinc.org"}},{"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder","valueInteger":5}],"id":"B85C15C3-C28F-4C5D-8869-C09C3254D562","valueCoding":{"code":"LA9933-8","display":"Always","system":"http://loinc.org"}}],"text":"I
+        felt depressed","type":"choice"}],"linkId":"DEE2D9CA-0094-492A-AA25-D4D53D426976","type":"group"}],"meta":{"profile":["http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-adapt"]},"resourceType":"Questionnaire","status":"active","subjectType":["Patient"],"title":""}],"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-expirationTime","valueDate":"2019-05-16"},{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-finishedTime","valueDate":"2019-05-13"}],"id":"721e637d-81b6-4d2e-8abe-8970913f460b","item":[{"answer":[{"valueCoding":{"code":"LA9933-8","display":"Always","system":"http://loinc.org"}}],"linkId":"DEE2D9CA-0094-492A-AA25-D4D53D426976"},{"answer":[{"valueCoding":{"code":"LA9933-8","display":"Always","system":"http://loinc.org"}}],"linkId":"F1BBB664-7C68-49EC-AB50-767CDFD947BA"},{"answer":[{"valueCoding":{"code":"LA9933-8","display":"Always","system":"http://loinc.org"}}],"linkId":"20023145-A4E1-4347-8128-BE19F6E8A739"},{"answer":[{"valueCoding":{"code":"LA9933-8","display":"Always","system":"http://loinc.org"}}],"linkId":"4CCE9B01-2906-4081-B697-1AD7BAA891AF"},{"answer":[{"valueCoding":{"code":"LA9933-8","display":"Always","system":"http://loinc.org"}}],"linkId":"1930C3B4-DBD1-4D23-875C-AE6E463D08A5"},{"answer":[{"valueCoding":{"code":"LA9933-8","display":"Always","system":"http://loinc.org"}}],"linkId":"02187B69-DE67-4023-B391-1F48B26A411B"},{"answer":[{"valueCoding":{"code":"LA9933-8","display":"Always","system":"http://loinc.org"}}],"linkId":"047135F6-D58C-4E8C-B6C3-9AEDE63CA2E4"},{"answer":[{"valueCoding":{"code":"LA9933-8","display":"Always","system":"http://loinc.org"}}],"linkId":"9E9B03F7-72BC-4876-9B2F-6892FAD1821E"},{"answer":[{"valueCoding":{"code":"LA9933-8","display":"Always","system":"http://loinc.org"}}],"linkId":"72B9318A-8E9C-4C18-AC41-8A9011BE890E"},{"answer":[{"valueCoding":{"code":"LA9933-8","display":"Always","system":"http://loinc.org"}}],"linkId":"12FC21DA-6160-4ADF-9528-0A75A40E6FFA"}],"meta":{"lastUpdated":"2019-06-26T17:26:34.113907+00:00","profile":["http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaireresponse-adapt"],"versionId":"MTU2MTU2OTk5NDExMzkwNzAwMA"},"resourceType":"QuestionnaireResponse","status":"in-progress","subject":{"reference":"Patient/524d6fcc-9cec-44f7-82b7-7b0253d13a46"}}'
+    http_version: 
+  recorded_at: Wed, 26 Jun 2019 17:26:34 GMT
+recorded_with: VCR 4.0.0

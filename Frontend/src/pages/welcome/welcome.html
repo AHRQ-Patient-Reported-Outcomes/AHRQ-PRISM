@@ -1,0 +1,56 @@
+<ion-content padding>
+  <div class="title">
+    <img class="logo" src="../../assets/imgs/PRISM-white.png">
+  </div>
+
+  <div class="questions">
+    <ion-grid class="questions-grid">
+      <ion-row align-items-center>
+        <ion-col text-center class="grid-col"><img height="50px" src="../../assets/imgs/check-circle.png"></ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col text-center class="grid-col"><p class="question-text">Answer a few questions</p></ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+
+  <div class="score">
+    <ion-grid>
+      <ion-row align-items-center>
+        <ion-col text-center class="grid-col"><p class="score-title">64</p></ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col text-center class="grid-col"><p class="score-text">Get a score for your symptoms</p></ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+
+  <div class="info">
+    <ion-grid class="info-grid">
+      <ion-row align-items-top>
+        <ion-col text-left col-4>
+          <img height="24px" src="../../assets/imgs/clipboard.png">
+          <p>Share with your doctor</p>
+        </ion-col>
+        <ion-col col-4>
+          <img height="24px" src="../../assets/imgs/bar-chart.png">
+          <p>Track changes over time</p>
+        </ion-col>
+        <ion-col col-4>
+          <img height="24px" src="../../assets/imgs/book-open.png">
+          <p>Learn to manage your symptoms</p>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+</ion-content>
+
+<div class="button-container">
+  <ion-grid>
+    <ion-row text-center>
+      <ion-col>
+        <button ion-button round color="white" class="button" (click)="onLogin()">Log In With <img class="medstar" src="../../assets/imgs/medstar.png"></button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</div>

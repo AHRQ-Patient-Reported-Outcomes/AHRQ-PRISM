@@ -1,0 +1,145 @@
+<ion-content padding *ngIf="currentPatient">
+
+  <div class="profile-header">
+    <ion-grid>
+      <ion-row align-items-center>
+        <ion-col col-3>
+          <ion-avatar>
+            <img height="60px" src="../../assets/imgs/house.svg">
+          </ion-avatar>
+        </ion-col>
+        <ion-col align-items-center>
+          <ion-row><p class="name">{{patientName}}</p></ion-row>
+          <ion-row>
+            <p *ngIf="!isLoggingOut"
+              class="settings-button"
+              (click)="logOut()">Log Out</p>
+            <p *ngIf="isLoggingOut"
+              class="settings-button">Logging Out...</p>
+          </ion-row>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+
+  <div class="profile-card">
+    <ion-card>
+      <ion-grid class="card-grid">
+        <ion-row align-items-center class="card-row-header">
+          <ion-col><p class="card-header">My Physical Function History</p></ion-col>
+          <ion-col col-auto><img ALIGN="right" class="right-arrow" src="../../assets/imgs/arrow-right.png" (click)="goToHistory()"></ion-col>
+        </ion-row>
+
+        <line-graph-component
+          *ngIf="graphData && graphData.length > 1"
+          [chartData]="graphData"
+          [horizontalAxisLines]="false"
+          [chartHeight]=80
+          [displayAxis]=false>
+        </line-graph-component>
+
+        <div *ngIf="!graphData">
+          <ion-row>
+            <ion-col text-center style="height: 140px">
+              <ion-spinner class="beginningSpinner" style='margin-top: 55px'></ion-spinner>
+            </ion-col>
+          </ion-row>
+        </div>
+
+        <div *ngIf="graphData && graphData.length === 1">
+          <br>
+        </div>
+
+        <ion-row>
+          <ion-col>
+            <p ALIGN="right" class="recent-score">Most recent score <span style='color: #D10BA2'>{{ mostRecentScore }}</span></p>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card>
+  </div>
+
+  <div class="profile-card">
+    <ion-card>
+      <ion-grid class="card-grid">
+        <ion-row align-items-center class="card-row-header">
+          <ion-col col-auto><p class="card-header">Patient Stories</p></ion-col>
+          <ion-col><img ALIGN="right" class="right-arrow" src="../../assets/imgs/arrow-right.png" (click)="goToPatientStories()"></ion-col>
+        </ion-row>
+        <ion-row align-items-center class="card-row">
+          <ion-col col-auto align-self-start>
+            <img class="story-image"  src="../../assets/imgs/alex-story.jpg">
+          </ion-col>
+          <ion-col align-self-start>
+            <p class="card-body-text">Patient stories coming soon.</p>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card>
+  </div>
+
+  <div class="profile-card">
+    <ion-card>
+      <ion-grid class="card-grid">
+        <ion-row align-items-center class="card-row-header">
+          <ion-col col-auto><p class="card-header">Recommended For You</p></ion-col>
+          <ion-col><img ALIGN="right" class="right-arrow" src="../../assets/imgs/arrow-right.png" (click)="goToArticles()"></ion-col>
+        </ion-row>
+        <ion-row align-items-center class="card-row">
+          <ion-col col-auto align-self-start>
+            <img class="recommended-image"  src="../../assets/imgs/recommended-1.jpg">
+          </ion-col>
+          <ion-col align-self-start>
+            <p class="card-body-text">Recommended articles coming soon.</p>
+          </ion-col>
+        </ion-row>
+        <ion-row align-items-center class="card-row">
+          <ion-col col-auto align-self-start>
+            <img class="recommended-image"  src="../../assets/imgs/recommended-2.jpg">
+          </ion-col>
+          <ion-col align-self-start>
+            <p class="card-body-text">Recommended articles coming soon.</p>
+          </ion-col>
+        </ion-row>
+        <ion-row align-items-center class="card-row">
+          <ion-col col-auto align-self-start>
+            <img class="recommended-image"  src="../../assets/imgs/recommended-3.jpg">
+          </ion-col>
+          <ion-col align-self-start>
+            <p class="card-body-text">Recommended articles coming soon.</p>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card>
+  </div>
+
+  <div
+    *ngIf="!showControls"
+    style="width: 100%; height: 150px;"
+    (click)="incrementCount()">
+  </div>
+
+  <div *ngIf="showControls" style="margin-top: 100px; margin-bottom: 100px;">
+    <ion-grid>
+      <!-- <ion-row><p class="settings-button" (click)="logOut()">Log Out</p></ion-row> -->
+      <!-- <ion-row><p class="settings-button" (click)="goToQuestionnaire()">Go To Questionnaire Page</p></ion-row> -->
+      <ion-row><p class="settings-button" (click)="resetResponse()">Retake Questionnaire</p></ion-row>
+      <!-- <ion-row><p class="settings-button" (click)="download()">Download Page</p></ion-row> -->
+    </ion-grid>
+  </div>
+
+</ion-content>
+
+<ion-footer padding no-border>
+  <ion-grid no-padding>
+    <ion-row align-items-center>
+      <ion-col col-auto align-self-start>
+        <img class="alert-image"  src="../../assets/imgs/alert-circle.png">
+      </ion-col>
+      <ion-col align-self-start>
+        <p class="alert-body">If you feel you are getting worse or need medical attention, always seek help.</p>
+        <p class="alert-subtitle">Contact a medical professional</p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-footer>

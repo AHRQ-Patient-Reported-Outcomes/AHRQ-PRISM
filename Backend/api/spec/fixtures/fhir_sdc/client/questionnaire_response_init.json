@@ -1,0 +1,41 @@
+{
+  "resourceType": "QuestionnaireResponse",
+  "id": "test",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaireresponse-adapt"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-expirationTime",
+      "valueDate": "10/21/2015 12:13:57 PM"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-finishedTime",
+      "valueDate": ""
+    }
+  ],
+  "contained": [
+    {
+      "resourceType": "Questionnaire",
+      "id": "96FE494D-F176-4EFB-A473-2AB406610626",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2014-11-14T10:03:25",
+        "profile": [
+          "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-adapt"
+        ]
+      },
+      "url": "http://mss.fsm.northwestern.edu/ac_api/2018-10/Questionnaire/96FE494D-F176-4EFB-A473-2AB406610626",
+      "title": "PROMIS Bank v1.0 - Depression",
+      "status": "active",
+      "date": "2018-03-04T16:22:55.772Z",
+      "subjectType": ["Patient"]
+    }
+  ],
+  "questionnaire": "http://hl7.org/fhir/us/sdc/StructureDefinition/sdc-questionnaire-dynamic",
+  "status": "in-progress",
+  "subject": "Patient/123",
+  "authored": "2018-03-04T16:22:55.772Z"
+}

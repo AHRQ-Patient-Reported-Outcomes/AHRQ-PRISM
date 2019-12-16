@@ -1,0 +1,22 @@
+<div>
+  <p *ngIf="item.text" class="question">{{ item.text }}</p>
+  <div *ngFor="let childItem of item.item">
+    <div *ngIf="childItem.type === 'group'">
+      <group-component
+        [item]="childItem"
+        [groupComponentSendAnswer]='groupComponentSendAnswerFunc'>
+      </group-component>
+    </div>
+
+    <div *ngIf="childItem.type === 'display'">
+      <display-item-component [item]="childItem"></display-item-component>
+    </div>
+
+    <div *ngIf="childItem.type === 'choice'">
+      <choice-item-component
+        [item]="childItem"
+        [choiceItemFunctionIn]='groupComponentSendAnswerFunc'>
+      </choice-item-component>
+    </div>
+  </div>
+</div>

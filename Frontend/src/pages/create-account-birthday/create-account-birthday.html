@@ -1,0 +1,35 @@
+<ion-content padding>
+    <div class="title">
+      <p>PRISM</p>
+    </div>
+    
+    <div class="login">
+      <p class="login-title">Create Account</p>
+      <p class="subtitle">Verify your birthdate to help us <br>make sure it's you!</p>
+  
+      <form [formGroup]="form">
+        <ion-item no-lines>
+          <ion-label stacked>Birth Date</ion-label>
+          <ion-input type="tel" formControlName="birthday" placeholder="MM/DD/YYYY" mask="00/00/0000" minlength="10" maxlength="10"></ion-input>
+        </ion-item>
+      </form>
+  
+      <ion-grid>
+        <ion-row>
+          <ion-col text-center>
+            <button ion-button block round color="primary" class="submit-button" (click)="verifyBirthday()">
+              Next
+            </button>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col text-center>
+            <p class="account-subtitle">Already have an account? <span class="subtitle-pink" (click)="goToLogin()">Log In</span></p>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+      
+    </div>
+
+  </ion-content>
+  

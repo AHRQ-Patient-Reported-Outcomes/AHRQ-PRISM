@@ -1,0 +1,31 @@
+page-download {
+  .container {
+    margin-left: 44px;
+    margin-right: 44px;
+    margin-top: 135px;
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  .footer-text {
+    font-size: 28px;
+    font-weight: bold;
+    color: color($colors, primary);
+  }
+
+  .store-image {
+    margin-bottom: 10px;
+  }
+
+  .logo {
+    height: 34px;
+  }
+
+  .logo-container {
+    position: fixed;
+    bottom: 20px;
+    width: 100%;
+    left: 0;
+    right: 0;
+  }
+}

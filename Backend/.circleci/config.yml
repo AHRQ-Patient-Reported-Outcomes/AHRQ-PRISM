@@ -1,0 +1,77 @@
+executors:
+  my-executor:
+    docker:
+        - image: circleci/ruby:2.5.5-node
+        - image: dwmkerr/dynamodb:48
+          entrypoint: ["java", "-Xmx1G", "-jar", "DynamoDBLocal.jar"]
+
+jobs:
+  build:
+    executor: my-executor
+    environment:
+      # needed for VCR
+      HUB_FHIR_URL: https://pkh-data-exchange-dev.herokuapp.com
+    steps:
+      - checkout
+      - compare-url/reconstruct
+      - run:
+          name: "Determine which Projects need to be built"
+          shell: /bin/bash -exo pipefail
+          command: |
+            CIRCLE_COMPARE_URL=$(cat CIRCLE_COMPARE_URL.txt)
+
+            echo "Circle Compare URL:" $CIRCLE_COMPARE_URL
+
+            COMMIT_RANGE=$(echo $CIRCLE_COMPARE_URL | sed 's:^.*/compare/::g')
+            echo "Commit range: " $COMMIT_RANGE
+            # git diff $COMMIT_RANGE --name-status
+            if [[ $(git diff $COMMIT_RANGE --name-status | grep "api") != "" ]]; then
+              echo "setting build ruby api lambda"
+              touch /tmp/api.lambda
+            fi
+            if [[ $(git diff $COMMIT_RANGE --name-status | grep "auth") != "" ]]; then
+              echo "setting build auth lambda"
+              touch /tmp/auth.lambda
+            fi
+      - run:
+          name: "Build & Test Auth Node Lambda"
+          shell: /bin/bash -exo pipefail
+          command: |
+            if [ -f "/tmp/auth.lambda" ]; then
+             echo "[BUILDING] Auth Lambda"
+            else
+              echo "[SKIPPING] Auth Lambda"
+            fi
+      - run:
+          name: "Build and Test Ruby Lambda"
+          shell: /bin/bash -exo pipefail
+          command: |
+            # if [ -f "/tmp/api.lambda" ]; then
+              echo "[BUILDING] Ruby API Lambda"
+
+              echo `ls`
+
+              cd api
+
+              bundle check --path=vendor/bundle || bundle install --path=vendor/bundle --jobs=4 --retry=3
+
+              bundle exec rake prism_app:db:setup
+
+              bundle exec rspec --color --require spec_helper --format progress spec
+            # else
+              # echo "[SKIPPING] Ruby API Lambda"
+            # fi
+      - run:
+          name: "Remove temporary files"
+          shell: /bin/bash -exo pipefail
+          command: |
+            rm -f /tmp/build-*
+
+orbs:
+  compare-url: iynere/compare-url@0.4.10
+version: 2.1
+workflows:
+  test-things-6:
+    jobs:
+      - build
+  version: 2

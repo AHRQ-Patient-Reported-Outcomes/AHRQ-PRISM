@@ -1,0 +1,12 @@
+page-questionnaire {
+  .footer-button {
+    width: 35px;
+    height: 35px;
+  }
+
+  @media only screen and (max-height: 470px) {
+    .scroll-content {
+      padding-bottom: 0 !important;
+    }
+  }
+}

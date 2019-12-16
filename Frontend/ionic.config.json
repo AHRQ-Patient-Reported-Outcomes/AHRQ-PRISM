@@ -1,0 +1,11 @@
+{
+  "name": "PRISM",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular",
+  "hooks": {
+    "build:before": "./scripts/before-build.js",
+    "build:after": "./scripts/after-build.js"
+  }
+}

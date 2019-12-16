@@ -1,0 +1,40 @@
+source 'http://rubygems.org'
+
+ruby '>=2.5'
+
+gem 'activemodel', '~> 4.2', '>= 4.2.6'
+gem 'aws-record'
+gem 'faraday'
+gem 'faraday_middleware'
+gem 'fhir_models', '~> 3.0'
+gem 'json'
+gem 'rack'
+gem 'rack-contrib'
+gem 'rake'
+gem 'rb-readline'
+gem 'requirable'
+gem 'rubysl-base64'
+gem 'sawyer'
+gem 'sinatra'
+gem 'sinatra-contrib'
+gem 'sinatra-param', require: 'sinatra/param'
+
+gem 'aws-sdk-lambda'
+gem 'rack-cors'
+
+# Lambda cannot properly load things. Commenting out all
+# of these is a hammer but it works to get deploy working.
+# group :development, :test do
+#   # We have to remove byebug b/c it blows up in lambda
+#   gem 'byebug'
+#   gem 'dotenv'
+# end
+
+# These are the dependencies that are used only for unit tests.
+# group :test do
+#   gem 'pry'
+#   gem 'rack-test'
+#   gem 'rspec'
+#   gem 'vcr'
+#   gem 'webmock'
+# end

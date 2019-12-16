@@ -1,0 +1,20 @@
+<div class="thermometer-pointer-container">
+  <span class="thermometer-pointer" [ngStyle]="pointerStyles()">
+    <img [src]="imageSrc()">
+  </span>
+</div>
+<div class="thermometer-container">
+  <span class="thermometer-range range-1"></span>
+  <span class="thermometer-range range-spacer"></span>
+  <span class="thermometer-range range-2"></span>
+  <span class="thermometer-range range-spacer"></span>
+  <span class="thermometer-range range-3"></span>
+  <span class="thermometer-range range-spacer"></span>
+  <span class="thermometer-range range-4"></span>
+  <span class="thermometer-range range-spacer"></span>
+  <span class="thermometer-range range-5"></span>
+</div>
+<div class="thermometer-score-container">
+  <div [ngStyle]="scoreStyles()" class="score-low"><strong>15</strong></div>
+  <div [ngStyle]="scoreStyles()" class="score-high"><strong>85</strong></div>
+</div>

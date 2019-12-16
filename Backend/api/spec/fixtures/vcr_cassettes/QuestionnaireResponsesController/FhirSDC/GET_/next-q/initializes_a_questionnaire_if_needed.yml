@@ -1,0 +1,66 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://www.assessmentcenter.net/AC_API/2018-10/Questionnaire/154D0273-C3F6-4BCE-8885-3194D4CC4596/next-q
+    body:
+      encoding: UTF-8
+      string: '{"contained":[{"id":"154D0273-C3F6-4BCE-8885-3194D4CC4596","meta":{"profile":["http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-adapt"]},"resourceType":"Questionnaire","status":"active","subjectType":["Patient"]}],"id":"questResp-a39bf9b3-b42d-4913-90a0-dcd23a782695","meta":{"profile":["http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaireresponse-adapt"]},"resourceType":"QuestionnaireResponse","status":"in-progress"}'
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private
+      Content-Type:
+      - application/fhir+json; charset=utf-8
+      Server:
+      - Microsoft-IIS/8.5
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Authorization
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - OPTIONS, GET, POST
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Frame-Options:
+      - SAMEORIGIN
+      Date:
+      - Tue, 18 Jun 2019 16:40:12 GMT
+      Content-Length:
+      - '4036'
+    body:
+      encoding: UTF-8
+      string: "{\"resourceType\": \"QuestionnaireResponse\",\"id\": \"154D0273-C3F6-4BCE-8885-3194D4CC4596\",\r\n\"meta\":
+        {\"profile\":[\"http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaireresponse-adapt\"]},\r\n\"extension\":
+        [\r\n{\"url\":\"http://hl7.org/fhir/StructureDefinition/questionnaire-expirationTime\",\"valueDate\":\"2019-06-21T16:40:12\"},\r\n{\"url\":\"http://hl7.org/fhir/StructureDefinition/questionnaire-finishedTime\",\"valueDate\":\"2019-06-18T16:40:12\"},\r\n{\"url\":\"http://hl7.org/fhir/StructureDefinition/questionnaire-scores\",\r\n\"extension\":[{\"url\":\"http://hl7.org/fhir/StructureDefinition/questionnaire-scores/theta\",\"valueDecimal\":0},{\"url\":\"http://hl7.org/fhir/StructureDefinition/questionnaire-scores/standarderror\",\"valueDecimal\":9.9}]}],\r\n\"contained\":
+        [{\"resourceType\":\"Questionnaire\",\r\n\"id\":\"154D0273-C3F6-4BCE-8885-3194D4CC4596\",\r\n\"meta\":{\"versionId\":\"\",\"lastUpdated\":\"\",\"profile\":[\"http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-adapt\"]},\r\n\"url\":\"\",\r\n\"title\":\"\",\r\n\"status\":\"active\",\r\n\"date\":\"\",\r\n\"subjectType\":[\"Patient\"],\r\n\"item\":[\r\n\r\n{\"extension\":[{\"url\":\"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder\",\"valueInteger\":1}],\r\n\"id\":\"PAININ9\",\r\n\"linkId\":\"C595E017-42B2-4093-9C3E-B338B22E4FE4\",\r\n\"code\":[{\"system\":\"http://loinc.org\",
+        \"code\":\"61758-9\", \"display\":\"In the past 7 daysHow much did pain interfere
+        with your day to day activities?\"}],\r\n\"type\":\"group\",\r\n\"item\":[{\"extension\":[{\"url\":\"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder\",\"valueInteger\":1}],\r\n\"linkId\":\"8AB8BA58-3BB0-40B6-B656-C24F1169069B\",\r\n\"text\":\"In
+        the past 7 days\",\r\n\"type\":\"display\"\r\n}\r\n,{\"extension\":[{\"url\":\"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder\",\"valueInteger\":2}],\r\n\"linkId\":\"5B10732E-3A51-438C-A437-B07E2CFBE71A\",\r\n\"text\":\"How
+        much did pain interfere with your day to day activities?\",\r\n\"type\":\"choice\"\r\n,\"answerOption\":[\r\n{\"id\":\"DC8FFD51-702B-4E77-BEE6-E9A9EB9C088F\",\r\n\"extension\":[{\"url\":\"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder\",\"valueInteger\":1}],\r\n\"modifierExtension\":[{\"url\":\"http://hl7.org/fhir/StructureDefinition/questionnaire-optionScore\",\"valueString\":\"1\"}],\r\n\"valueCoding\":{\"system\":\"http://loinc.org\",
+        \"code\":\"LA6568-5\", \"display\":\"Not at all\"},\r\n\"text\":\"Not at all\"}\r\n,\r\n{\"id\":\"72A3573B-E0C3-4358-AF57-858F11A0ED49\",\r\n\"extension\":[{\"url\":\"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder\",\"valueInteger\":2}],\r\n\"modifierExtension\":[{\"url\":\"http://hl7.org/fhir/StructureDefinition/questionnaire-optionScore\",\"valueString\":\"2\"}],\r\n\"valueCoding\":{\"system\":\"http://loinc.org\",
+        \"code\":\"LA13863-8\", \"display\":\"A little bit\"},\r\n\"text\":\"A little
+        bit\"}\r\n,\r\n{\"id\":\"C31A3FCB-A380-444F-8579-62AA5DA11BA2\",\r\n\"extension\":[{\"url\":\"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder\",\"valueInteger\":3}],\r\n\"modifierExtension\":[{\"url\":\"http://hl7.org/fhir/StructureDefinition/questionnaire-optionScore\",\"valueString\":\"3\"}],\r\n\"valueCoding\":{\"system\":\"http://loinc.org\",
+        \"code\":\"LA13909-9\", \"display\":\"Somewhat\"},\r\n\"text\":\"Somewhat\"}\r\n,\r\n{\"id\":\"FCD65655-AA94-44B6-B944-2994D984A4E3\",\r\n\"extension\":[{\"url\":\"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder\",\"valueInteger\":4}],\r\n\"modifierExtension\":[{\"url\":\"http://hl7.org/fhir/StructureDefinition/questionnaire-optionScore\",\"valueString\":\"4\"}],\r\n\"valueCoding\":{\"system\":\"http://loinc.org\",
+        \"code\":\"LA13902-4\", \"display\":\"Quite a bit\"},\r\n\"text\":\"Quite
+        a bit\"}\r\n,\r\n{\"id\":\"1F43076B-0B6B-4D91-8B3C-EF6E39F9CF18\",\r\n\"extension\":[{\"url\":\"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder\",\"valueInteger\":5}],\r\n\"modifierExtension\":[{\"url\":\"http://hl7.org/fhir/StructureDefinition/questionnaire-optionScore\",\"valueString\":\"5\"}],\r\n\"valueCoding\":{\"system\":\"http://loinc.org\",
+        \"code\":\"LA13914-9\", \"display\":\"Very much\"},\r\n\"text\":\"Very much\"}\r\n]}\r\n]}\r\n\r\n\r\n]\r\n}],\r\n\"questionnaire\":
+        \"http://hl7.org/fhir/us/sdc/StructureDefinition/sdc-questionnaire-dynamic\",\r\n\"status\":\"in-progress\",\r\n\"subject\":\"Patient\",\r\n\"authored\":\"2019-06-18T16:40:12\",\r\n\"item\":
+        []\r\n}\r\n"
+    http_version: 
+  recorded_at: Tue, 18 Jun 2019 16:40:08 GMT
+recorded_with: VCR 4.0.0

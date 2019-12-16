@@ -1,0 +1,16 @@
+<ion-content padding>
+  <div *ngIf="title" class="assessment-container">
+    <p class="header">{{title}} Assessment</p>
+    <p class="subheader">4-6 Questions <br>Score out of 100</p>
+  </div>
+</ion-content>
+
+<div class="button-container">
+  <ion-grid>
+    <ion-row text-center>
+      <ion-col>
+        <button ion-button round class="button" (click)="beginAssessment()">Begin Assessment</button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</div>

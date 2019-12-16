@@ -1,0 +1,62 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://www.assessmentcenter.net/ac_api/2014-01/StatelessParticipants/154D0273-C3F6-4BCE-8885-3194D4CC4596.json
+    body:
+      encoding: UTF-8
+      string: PAININ31=Somewhat&PAININ9=Somewhat
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private
+      Content-Type:
+      - text; charset=utf-8
+      Server:
+      - Microsoft-IIS/8.5
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Authorization
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - OPTIONS, GET, POST
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Frame-Options:
+      - SAMEORIGIN
+      Date:
+      - Thu, 23 May 2019 17:57:49 GMT
+      Content-Length:
+      - '1811'
+    body:
+      encoding: UTF-8
+      string: '{"EngineAssembly":"CORE.Engines", "EngineType":"CORE.Engines.CATEngineGRM_Configurable","Theta":"1.15549528967784",
+        "StdError":"0.213852640442159","Items":[{"FormItemOID":"2E50D25F-F59C-4A46-8B96-D7E5E01350A7","ItemResponseOID":"","Response":"","ID":"PAININ36","Order":"25","ItemType":"","Elements":[{"ElementOID":"8AB8BA58-3BB0-40B6-B656-C24F1169069B","Description":"In
+        the past 7 days","ElementOrder":"1"},{"ElementOID":"FCBF84A3-103C-439B-891E-AD53F4421B73","Description":"How
+        much did pain interfere with your enjoyment of social activities?","ElementOrder":"2"},{"ElementOID":"B8630087-5995-4B62-8BE1-55BDEA27A80A","Description":"ContainerForB8630087-5995-4B62-8BE1-55BDEA27A80A","ElementOrder":"3","Map":[{"ElementOID":"949D2A4E-3A2B-4CD6-BE45-33C56EA76813","Description":"Not
+        at all","FormItemOID":"2E50D25F-F59C-4A46-8B96-D7E5E01350A7","ItemResponseOID":"CDB61FBF-7C66-4A33-8CE8-5FEC4F079055",
+        "Value":"1","Position":"1"},{"ElementOID":"7C45E84C-87A5-410B-BF19-29D75531EFF4","Description":"A
+        little bit","FormItemOID":"2E50D25F-F59C-4A46-8B96-D7E5E01350A7","ItemResponseOID":"CBC75DDA-F3B4-42DE-9DEF-7B346B1A76F4",
+        "Value":"2","Position":"2"},{"ElementOID":"441EE176-E592-4B32-B5FE-83B738EB10BA","Description":"Somewhat","FormItemOID":"2E50D25F-F59C-4A46-8B96-D7E5E01350A7","ItemResponseOID":"6D68A13D-985F-4FDE-AB8E-DB118ED50C63",
+        "Value":"3","Position":"3"},{"ElementOID":"29BD9E0E-298C-4A51-99C3-48B9D4D25B07","Description":"Quite
+        a bit","FormItemOID":"2E50D25F-F59C-4A46-8B96-D7E5E01350A7","ItemResponseOID":"33EEF31E-B38F-426C-9F66-577C2BE214F1",
+        "Value":"4","Position":"4"},{"ElementOID":"74DC8842-078A-4DC6-B9C9-1656A8775657","Description":"Very
+        much","FormItemOID":"2E50D25F-F59C-4A46-8B96-D7E5E01350A7","ItemResponseOID":"E5FBC8E0-A21D-42B3-B91C-1DCDB0551658",
+        "Value":"5","Position":"5"}]}]}]}'
+    http_version: 
+  recorded_at: Thu, 23 May 2019 17:57:06 GMT
+recorded_with: VCR 4.0.0

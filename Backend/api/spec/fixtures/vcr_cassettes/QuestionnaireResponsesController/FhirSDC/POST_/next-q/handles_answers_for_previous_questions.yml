@@ -1,0 +1,74 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://www.assessmentcenter.net/AC_API/2018-10/Questionnaire/96FE494D-F176-4EFB-A473-2AB406610626/next-q
+    body:
+      encoding: UTF-8
+      string: '{"contained":[{"id":"96FE494D-F176-4EFB-A473-2AB406610626","item":[{"code":[{"system":"http://loinc.org","display":"In
+        the past 7 daysI felt depressed","code":"61967-6"}],"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder","valueInteger":1}],"id":"EDDEP29","item":[{"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder","valueInteger":1}],"linkId":"8AB8BA58-3BB0-40B6-B656-C24F1169069B","text":"In
+        the past 7 days","type":"display"},{"answerOption":[{"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder","valueInteger":1}],"id":"BF2FFE4B-53FA-45B7-8464-58A1E84B49DD","modifierExtension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-optionScore","valueString":null}],"text":"Never","valueCoding":{"system":"http://loinc.org","display":"Never","code":"LA6270-8"}},{"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder","valueInteger":2}],"id":"D96D8FBD-C726-4D34-8C3C-2B4377C0438B","modifierExtension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-optionScore","valueString":null}],"text":"Rarely","valueCoding":{"system":"http://loinc.org","display":"Rarely","code":"LA10066-1"}},{"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder","valueInteger":3}],"id":"23EC60A7-53E7-4BE2-BCDB-2D70365D0EF7","modifierExtension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-optionScore","valueString":null}],"text":"Sometimes","valueCoding":{"system":"http://loinc.org","display":"Sometimes","code":"LA10082-8"}},{"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder","valueInteger":4}],"id":"67032EB7-497B-4021-91CB-4DBB5C995FED","modifierExtension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-optionScore","valueString":null}],"text":"Often","valueCoding":{"system":"http://loinc.org","display":"Often","code":"LA10044-8"}},{"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder","valueInteger":5}],"id":"B85C15C3-C28F-4C5D-8869-C09C3254D562","modifierExtension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-optionScore","valueString":null}],"text":"Always","valueCoding":{"system":"http://loinc.org","display":"Always","code":"LA9933-8"}}],"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder","valueInteger":2}],"linkId":"C24FEEED-B48C-4BD4-972B-5AB30A5A6353","text":"I
+        felt depressed","type":"choice"}],"linkId":"DEE2D9CA-0094-492A-AA25-D4D53D426976","type":"group"}],"meta":{"versionId":null,"lastUpdated":null,"profile":["http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-adapt"]},"resourceType":"Questionnaire","status":"active","subjectType":["Patient"]}],"id":"questResp-751666e0-8e81-4cee-8725-efe67eee1f96","meta":{"profile":["http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaireresponse-adapt"]},"resourceType":"QuestionnaireResponse","authored":"2019-05-13T17:46:53+00:00","extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-expirationTime","valueDate":"2019-05-16"},{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-finishedTime","valueDate":"2019-05-13"}],"item":[{"answer":[{"valueCoding":{"system":"http://loinc.org","display":"Always","code":"LA9933-8"},"valueString":"Always"}],"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder","valueInteger":1}],"linkId":"DEE2D9CA-0094-492A-AA25-D4D53D426976"}],"status":"in-progress"}'
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private
+      Content-Type:
+      - application/fhir+json; charset=utf-8
+      Server:
+      - Microsoft-IIS/8.5
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Authorization
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - OPTIONS, GET, POST
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Frame-Options:
+      - SAMEORIGIN
+      Date:
+      - Tue, 18 Jun 2019 16:40:13 GMT
+      Content-Length:
+      - '6860'
+    body:
+      encoding: UTF-8
+      string: "{\"resourceType\": \"QuestionnaireResponse\",\"id\": \"96FE494D-F176-4EFB-A473-2AB406610626\",\r\n\"meta\":
+        {\"profile\":[\"http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaireresponse-adapt\"]},\r\n\"extension\":
+        [\r\n{\"url\":\"http://hl7.org/fhir/StructureDefinition/questionnaire-expirationTime\",\"valueDate\":\"2019-06-21T16:40:13\"},\r\n{\"url\":\"http://hl7.org/fhir/StructureDefinition/questionnaire-finishedTime\",\"valueDate\":\"2019-06-18T16:40:13\"},\r\n{\"url\":\"http://hl7.org/fhir/StructureDefinition/questionnaire-scores\",\r\n\"extension\":[{\"url\":\"http://hl7.org/fhir/StructureDefinition/questionnaire-scores/theta\",\"valueDecimal\":2.2},{\"url\":\"http://hl7.org/fhir/StructureDefinition/questionnaire-scores/standarderror\",\"valueDecimal\":0.5}]}],\r\n\"contained\":
+        [{\"resourceType\":\"Questionnaire\",\r\n\"id\":\"96FE494D-F176-4EFB-A473-2AB406610626\",\r\n\"meta\":{\"versionId\":\"\",\"lastUpdated\":\"\",\"profile\":[\"http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-adapt\"]},\r\n\"url\":\"\",\r\n\"title\":\"\",\r\n\"status\":\"active\",\r\n\"date\":\"\",\r\n\"subjectType\":[\"Patient\"],\r\n\"item\":[\r\n\r\n{\"extension\":[{\"url\":\"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder\",\"valueInteger\":2}],\r\n\"id\":\"EDDEP41\",\r\n\"linkId\":\"F1BBB664-7C68-49EC-AB50-767CDFD947BA\",\r\n\"code\":[{\"system\":\"http://loinc.org\",
+        \"code\":\"61973-4\", \"display\":\"In the past 7 daysI felt hopeless\"}],\r\n\"type\":\"group\",\r\n\"item\":[{\"extension\":[{\"url\":\"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder\",\"valueInteger\":1}],\r\n\"linkId\":\"8AB8BA58-3BB0-40B6-B656-C24F1169069B\",\r\n\"text\":\"In
+        the past 7 days\",\r\n\"type\":\"display\"\r\n}\r\n,{\"extension\":[{\"url\":\"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder\",\"valueInteger\":2}],\r\n\"linkId\":\"D8D3DC16-AA2B-4B59-B216-EAD42223E476\",\r\n\"text\":\"I
+        felt hopeless\",\r\n\"type\":\"choice\"\r\n,\"answerOption\":[\r\n{\"id\":\"CAC523E3-B5BC-4F97-97B8-275ECAD15856\",\r\n\"extension\":[{\"url\":\"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder\",\"valueInteger\":1}],\r\n\"modifierExtension\":[{\"url\":\"http://hl7.org/fhir/StructureDefinition/questionnaire-optionScore\",\"valueString\":\"1\"}],\r\n\"valueCoding\":{\"system\":\"http://loinc.org\",
+        \"code\":\"LA6270-8\", \"display\":\"Never\"},\r\n\"text\":\"Never\"}\r\n,\r\n{\"id\":\"0B55633D-A218-4A8A-B149-983218FA7E14\",\r\n\"extension\":[{\"url\":\"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder\",\"valueInteger\":2}],\r\n\"modifierExtension\":[{\"url\":\"http://hl7.org/fhir/StructureDefinition/questionnaire-optionScore\",\"valueString\":\"2\"}],\r\n\"valueCoding\":{\"system\":\"http://loinc.org\",
+        \"code\":\"LA10066-1\", \"display\":\"Rarely\"},\r\n\"text\":\"Rarely\"}\r\n,\r\n{\"id\":\"BB3E3949-94BF-4D49-A3AB-416605DE9AF1\",\r\n\"extension\":[{\"url\":\"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder\",\"valueInteger\":3}],\r\n\"modifierExtension\":[{\"url\":\"http://hl7.org/fhir/StructureDefinition/questionnaire-optionScore\",\"valueString\":\"3\"}],\r\n\"valueCoding\":{\"system\":\"http://loinc.org\",
+        \"code\":\"LA10082-8\", \"display\":\"Sometimes\"},\r\n\"text\":\"Sometimes\"}\r\n,\r\n{\"id\":\"A8CE7010-2E45-4DEC-A6BC-5F997CA202CF\",\r\n\"extension\":[{\"url\":\"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder\",\"valueInteger\":4}],\r\n\"modifierExtension\":[{\"url\":\"http://hl7.org/fhir/StructureDefinition/questionnaire-optionScore\",\"valueString\":\"4\"}],\r\n\"valueCoding\":{\"system\":\"http://loinc.org\",
+        \"code\":\"LA10044-8\", \"display\":\"Often\"},\r\n\"text\":\"Often\"}\r\n,\r\n{\"id\":\"F5B508F6-36EF-44FB-80F4-E975B3905A1B\",\r\n\"extension\":[{\"url\":\"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder\",\"valueInteger\":5}],\r\n\"modifierExtension\":[{\"url\":\"http://hl7.org/fhir/StructureDefinition/questionnaire-optionScore\",\"valueString\":\"5\"}],\r\n\"valueCoding\":{\"system\":\"http://loinc.org\",
+        \"code\":\"LA9933-8\", \"display\":\"Always\"},\r\n\"text\":\"Always\"}\r\n]}\r\n]}\r\n,{\"extension\":[{\"url\":\"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder\",\"valueInteger\":1}],\r\n\"id\":\"EDDEP29\",\r\n\"linkId\":\"DEE2D9CA-0094-492A-AA25-D4D53D426976\",\r\n\"code\":[{\"system\":\"http://loinc.org\",
+        \"code\":\"61967-6\", \"display\":\"In the past 7 daysI felt depressed\"}],\r\n\"type\":\"group\",\r\n\"item\":[{\"extension\":[{\"url\":\"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder\",\"valueInteger\":1}],\r\n\"linkId\":\"8AB8BA58-3BB0-40B6-B656-C24F1169069B\",\r\n\"text\":\"In
+        the past 7 days\",\r\n\"type\":\"display\"\r\n}\r\n,{\"extension\":[{\"url\":\"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder\",\"valueInteger\":2}],\r\n\"linkId\":\"C24FEEED-B48C-4BD4-972B-5AB30A5A6353\",\r\n\"text\":\"I
+        felt depressed\",\r\n\"type\":\"choice\"\r\n,\"answerOption\":[\r\n{\"id\":\"BF2FFE4B-53FA-45B7-8464-58A1E84B49DD\",\r\n\"extension\":[{\"url\":\"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder\",\"valueInteger\":1}],\r\n\"modifierExtension\":[{\"url\":\"http://hl7.org/fhir/StructureDefinition/questionnaire-optionScore\",\"valueString\":\"\"}],\r\n\"valueCoding\":{\"system\":\"http://loinc.org\",
+        \"code\":\"LA6270-8\", \"display\":\"Never\"},\r\n\"text\":\"Never\"}\r\n,\r\n{\"id\":\"D96D8FBD-C726-4D34-8C3C-2B4377C0438B\",\r\n\"extension\":[{\"url\":\"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder\",\"valueInteger\":2}],\r\n\"modifierExtension\":[{\"url\":\"http://hl7.org/fhir/StructureDefinition/questionnaire-optionScore\",\"valueString\":\"\"}],\r\n\"valueCoding\":{\"system\":\"http://loinc.org\",
+        \"code\":\"LA10066-1\", \"display\":\"Rarely\"},\r\n\"text\":\"Rarely\"}\r\n,\r\n{\"id\":\"23EC60A7-53E7-4BE2-BCDB-2D70365D0EF7\",\r\n\"extension\":[{\"url\":\"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder\",\"valueInteger\":3}],\r\n\"modifierExtension\":[{\"url\":\"http://hl7.org/fhir/StructureDefinition/questionnaire-optionScore\",\"valueString\":\"\"}],\r\n\"valueCoding\":{\"system\":\"http://loinc.org\",
+        \"code\":\"LA10082-8\", \"display\":\"Sometimes\"},\r\n\"text\":\"Sometimes\"}\r\n,\r\n{\"id\":\"67032EB7-497B-4021-91CB-4DBB5C995FED\",\r\n\"extension\":[{\"url\":\"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder\",\"valueInteger\":4}],\r\n\"modifierExtension\":[{\"url\":\"http://hl7.org/fhir/StructureDefinition/questionnaire-optionScore\",\"valueString\":\"\"}],\r\n\"valueCoding\":{\"system\":\"http://loinc.org\",
+        \"code\":\"LA10044-8\", \"display\":\"Often\"},\r\n\"text\":\"Often\"}\r\n,\r\n{\"id\":\"B85C15C3-C28F-4C5D-8869-C09C3254D562\",\r\n\"extension\":[{\"url\":\"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder\",\"valueInteger\":5}],\r\n\"modifierExtension\":[{\"url\":\"http://hl7.org/fhir/StructureDefinition/questionnaire-optionScore\",\"valueString\":\"\"}],\r\n\"valueCoding\":{\"system\":\"http://loinc.org\",
+        \"code\":\"LA9933-8\", \"display\":\"Always\"},\r\n\"text\":\"Always\"}\r\n]}\r\n]}\r\n\r\n\r\n]\r\n}],\r\n\"questionnaire\":
+        \"http://hl7.org/fhir/us/sdc/StructureDefinition/sdc-questionnaire-dynamic\",\r\n\"status\":\"in-progress\",\r\n\"subject\":\"Patient\",\r\n\"authored\":\"2019-06-18T16:40:13\",\r\n\"item\":
+        [{\"extension\":[{\"url\":\"http://hl7.org/fhir/StructureDefinition/questionnaire-displayOrder\",\"valueInteger\":1}],\r\n\"linkId\":\"DEE2D9CA-0094-492A-AA25-D4D53D426976\",\r\n\"answer\":[{\"valueString\":\"Always\",\"valueCoding\":{\"system\":\"http://loinc.org\",\"code\":\"LA9933-8\",\"display\":\"Always\"},\"text\":\"\"}]\r\n}\r\n]\r\n}\r\n"
+    http_version: 
+  recorded_at: Tue, 18 Jun 2019 16:40:09 GMT
+recorded_with: VCR 4.0.0

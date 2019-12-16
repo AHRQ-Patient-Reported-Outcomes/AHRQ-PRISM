@@ -1,0 +1,48 @@
+page-prequestionnaire {
+  .scroll-content {
+    padding: 0px !important;
+  }
+
+  .assessment-container {
+    margin: 118px 41px 0px 41px;
+  }
+
+  .header {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 2px;
+  }
+
+  .subheader {
+    font-size: 16px;
+    font-weight: bold;
+    color: color($colors, primary);
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .button-container {
+    position: fixed;
+    bottom: 20px;
+    width: 100%;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
+
+  .button {
+    font-size: 16px;
+    font-weight: bold;
+    width: 60%;
+    color: white;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,.4);
+  }
+
+  @media only screen and (max-height: 470px) {
+    .assessment-container {
+      margin-top: 50px;
+    }
+  }
+
+}

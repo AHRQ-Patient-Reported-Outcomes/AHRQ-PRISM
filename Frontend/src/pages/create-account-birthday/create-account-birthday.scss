@@ -1,0 +1,83 @@
+page-create-account-birthday {
+  .scroll-content {
+    background: color($colors, primary);
+  }
+
+  .title {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    color: white;
+    font-size: 53px;
+    font-weight: bold;
+  }
+
+  .login {
+    background: white;
+    border-radius: 10px;
+    padding-bottom: 30px;
+  }
+
+  .login-title {
+    margin-top: 0px;
+    padding-top: 20px;
+    margin-bottom: 10px;
+    padding-left: 15px;
+    font-weight: bold;
+    font-size: 30px;
+    color: color($colors, primary);
+  }
+
+  .subtitle {
+    padding-left: 15px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .account-subtitle {
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .subtitle-pink {
+    font-size: 16px;
+    font-weight: 500;
+    color: color($colors, primary);
+  }
+
+  .validation-text {
+    margin-left: 20px !important;
+  }
+
+  ion-input {
+    border: 1px solid color($colors, dark);
+    border-radius: 15px;
+    padding: 6px;
+  }
+
+  ion-input:focus-within {
+    border: 1px solid color($colors, primary);
+  }
+
+  .submit-button {
+    margin-top: 20px;
+    width: 85%;
+    font-size: 18px;
+    font-weight: bold;
+    display: inline-block;
+  }
+
+  .secondary-button {
+    font-size: 16px;
+    font-weight: bold;
+    display: inline-block;
+  }
+
+  ion-label {
+    font-size: 16px !important;
+    font-weight: bold;
+  }
+  
+  
+
+}

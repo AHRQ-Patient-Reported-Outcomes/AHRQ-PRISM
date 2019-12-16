@@ -1,0 +1,51 @@
+<ion-content padding>
+    <div class="title">
+      <p>PRISM</p>
+    </div>
+    
+    <div class="login">
+      <p class="login-title">Create Account</p>
+      <p class="subtitle">Finalize your account and add <br>your email.</p>
+  
+      <form [formGroup]="form">
+        <ion-item no-lines>
+          <ion-label stacked>Email</ion-label>
+          <ion-input type="email" formControlName="email"></ion-input>
+        </ion-item>
+        <p ion-text class="validation-text" color="danger" *ngIf="form.controls['email'].hasError('email') && form.controls['email'].touched">
+          Incorrect email format
+        </p>
+    
+        <ion-item no-lines>
+          <ion-label stacked>Password</ion-label>
+          <ion-input type="password" formControlName="password"></ion-input>
+        </ion-item>
+        <p ion-text class="validation-text" color="danger" *ngIf="form.controls['password'].hasError('minlength') && form.controls['password'].touched">
+          Password must be at least 6 characters
+        </p>
+        <ion-item no-lines>
+          <ion-label stacked>Confirm Password</ion-label>
+          <ion-input type="password" formControlName="confirmPassword"></ion-input>
+          <p ion-text class="validation-text" color="danger" *ngIf="form.controls['confirmPassword'].hasError('passwordMismatch') && form.controls['confirmPassword'].touched">Passwords do not match</p>
+        </ion-item>
+      </form>
+  
+      <ion-grid>
+        <ion-row>
+          <ion-col text-center>
+            <button ion-button block round color="primary" class="submit-button" (click)="register()" [disabled]="!form.valid">
+              Next
+            </button>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col text-center>
+            <p class="account-subtitle">Already have an account? <span class="subtitle-pink" (click)="goToLogin()">Log In</span></p>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+      
+    </div>
+
+  </ion-content>
+  

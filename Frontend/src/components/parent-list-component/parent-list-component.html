@@ -1,0 +1,19 @@
+<div *ngIf="item" class="parent-container">
+  <div *ngIf="item.type === 'group'">
+    <group-component
+      [item]="item"
+      [groupComponentSendAnswer]='parentComponentSendAnswerFunc'>
+    </group-component>
+  </div>
+
+  <div *ngIf="item.type === 'display'">
+    <display-item-component [item]="item"></display-item-component>
+  </div>
+
+  <div *ngIf="item.type === 'choice'">
+    <choice-item-component
+      [item]="item"
+      [choiceItemFunctionIn]='parentComponentSendAnswerFunc'>
+    </choice-item-component>
+  </div>
+</div>

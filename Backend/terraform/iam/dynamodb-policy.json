@@ -1,0 +1,15 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "DynamoDBExecutions",
+      "Effect": "Allow",
+      "Action": [${policy_action_list}],
+      "Resource": [
+          "${policy_arn_list}",
+          "${policy_arn_list}/index/GSI-1",
+          "${policy_arn_list}/index/inProgressQuestionnaireResponses"
+        ]
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+group-component {
+  .question {
+    font-size: 31px;
+    font-weight: bold;
+
+    // Must order from largest to smallest so that smallest applies on
+    // the correct devices
+    //
+    // iPhone 6/7/8 APP, 6/7/8 & +++ & X, Xs Mobile Web
+    @media only screen and (max-height: 670px) {
+      font-size: 27px;
+    }
+
+    // iPhone 6/7/8 Mobile Web
+    @media only screen and (max-height: 560px) {
+      font-size: 23px;
+    }
+
+    // iPhone SE Mobile Web
+    @media only screen and (max-width: 374px) {
+      font-size: 18px;
+    }
+  }
+}

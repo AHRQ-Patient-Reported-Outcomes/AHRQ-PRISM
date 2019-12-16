@@ -1,0 +1,43 @@
+version: '3.2'
+volumes:
+  dynamodb-data:
+services:
+  db:
+    image: dwmkerr/dynamodb:48
+    command: -sharedDb -dbPath /data
+    volumes:
+      - dynamodb-data:/data
+    ports:
+      - "8000:8000"
+    expose:
+      - "8000"
+  ruby:
+    build:
+      context: .
+      dockerfile: ./docker/ruby/Dockerfile
+    command: bundle exec rackup -p 3030 --host 0.0.0.0
+    ports:
+      - "3030:3030"
+    depends_on:
+      - db
+    environment:
+      PROMIS_API_USERNAME: "${PROMIS_API_USERNAME}"
+      PROMIS_API_PASSWORD: "${PROMIS_API_PASSWORD}"
+      DYNAMO_LOCATION: "db:8000"
+  # # Node based Auth Lambda
+  auth:
+    build:
+      context: .
+      dockerfile: ./docker/auth/Dockerfile
+    command: nodemon app.local.js
+    volumes:
+      - ./auth:/usr/src/app
+      - /usr/app/node_modules
+    depends_on:
+      - db
+    environment:
+      - AWS_ACCESS_KEY_ID
+      - AWS_SECRET_ACCESS_KEY
+      - AWS_REGION
+    ports:
+      - '3031:3031'

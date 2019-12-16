@@ -1,0 +1,16 @@
+common: &common
+  app_name: "Prism"
+  # promis_api_type: NorthWesternSDC
+  promis_api_type: FhirSDC
+
+development:
+  <<: *common
+  table_name: 'PrismLocal'
+
+test:
+  <<: *common
+  table_name: 'PrismLocal-Test'
+
+production:
+  <<: *common
+  table_name: 'PrismApiTable'
