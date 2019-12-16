@@ -15,9 +15,9 @@ The PRISM App consists of a Frontend Hybrid mobile app built using Angular and I
 Important Files:
 - [Frontend Readme](Frontend/README.md)
 - [Backend Readme](Backend/README.md)
-- [Install Backend Dependencies](backend/docs/install-dependencies.md)
-- [Run backend for development](backend/docs/run-for-development.md)
-- [Deploy backend to Production](backend/docs/how-to-deploy.md)
+- [Install Backend Dependencies](Backend/docs/install-dependencies.md)
+- [Run backend for development](Backend/docs/run-for-development.md)
+- [Deploy backend to Production](Backend/docs/how-to-deploy.md)
 
 For technical and design questions please contact help@perkhealth.me
 
