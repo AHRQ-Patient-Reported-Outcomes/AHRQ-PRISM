@@ -1,5 +1,3 @@
-PRISM Read.me
-
 # About
 
 The award-winning PRISM (**P**ROMIS **R**eporting and **I**nsight **S**ystem from **M**innesota) is an application that enhances the quality of clinical discussion between healthcare providers and patients by allowing for PRO collection and continued patient engagement outside of the clinical setting.
@@ -15,8 +13,8 @@ The code posted here represents the first version of PRISM that was implemented 
 The PRISM App consists of a Frontend Hybrid mobile app built using Angular and Ionic and Backend built AWS Lambda and other services. To get up and running with the project, please fully install the Backend before moving on to Frontend. The Frontend configuration depends on the backend.
 
 Important Files:
-- [Frontend Readme](frontend/README.md)
-- [Backend Readme](backend/README.md)
+- [Frontend Readme](Frontend/README.md)
+- [Backend Readme](Backend/README.md)
 - [Install Backend Dependencies](backend/docs/install-dependencies.md)
 - [Run backend for development](backend/docs/run-for-development.md)
 - [Deploy backend to Production](backend/docs/how-to-deploy.md)
