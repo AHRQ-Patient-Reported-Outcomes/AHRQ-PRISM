@@ -49,15 +49,13 @@ PRISM supports Smart on FHIR for seamless integration with a user management pro
 
 PRISM was built leveraging Amazon's AWS serverless products as a way to demonstrate the ability to use modern development practices in a project that mandated adherence to healthcare standards and regulations including HIPPA and FHIR. While this presented some challenges, it accelerated the initial prototype development considerably, simplified several stages of early development, and provides a useful case study.
 
-Due to still incomplete EHR support for FHIR, PRISM was built in concert with Perk Health's Hub product to provide a means for patient account creation, invitation, user authorization and authentication, FHIR data storage, and APIs for the in-EHR provider apps to pull and view patient data.      
+Due to still incomplete EHR support for FHIR, PRISM was built in concert with Perk Health's Hub product which provides a means for FHIR compliant data storage, patient account creation, invitation, user sign in/on, authentication, authorization, and APIs for MedStar's provider facing app to display PRO scores within multiple EHRs.    
 
 To administer Computer Adaptive PROMIS assessments PRISM integrates with an external assessment center created by Northwestern University. 
 
-# Development
+# Design & Usability
 
 PRISM underwent extensive usability testing with patients at Health East's Kidney Stone Institute. We Evaluated features including a patient's ability to complete physical function and other PROMIS measures, interact with score results and trends, peer group comparisons, relevant recommendations for follow-up actions, and education materials aimed to further engage patients in their care. These features and the app as a whole was shown to be highly usable and scored well above average on the Stsem Usability Scale for users of various level of technology literacy. 
-
-Patient Reported Outcomes captured by the app are integrated into the EHR and available for providers to use, in real-time, during their clinical care and shared decision making with the patient. This integration is provided via Perk Health's Healthcare Hub which supplies FHIR compliant data storage, user sign in/on, authentication, authorization, and APIs for MedStar's provider facing app to display results within multiple EHRs. 
 
 
 # License
