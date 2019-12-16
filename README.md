@@ -8,7 +8,7 @@ PRISM was developed by a multi-disciplinary team including [Perk Health](https:/
 
 The code posted here represents the first version of PRISM that was implemented at MedStar Health as a result of winning the grand prize in AHRQ's Step-Up App challenge. This app is continually being enhanced in functionality and interoperability by the PRISM Team. 
 
-# Devloper Links
+# Developer Links
 
 The PRISM App consists of a Frontend Hybrid mobile app built using Angular and Ionic and Backend built AWS Lambda and other services. To get up and running with the project, please fully install the Backend before moving on to Frontend. The Frontend configuration depends on the backend.
 
