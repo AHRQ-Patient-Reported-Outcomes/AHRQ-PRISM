@@ -1,3 +1,5 @@
+![PRISM App](https://i.ibb.co/tKWcy60/PRISM-3-2x.png)
+
 # About
 
 The award-winning PRISM (**P**ROMIS **R**eporting and **I**nsight **S**ystem from **M**innesota) is an application that enhances the quality of clinical discussion between healthcare providers and patients by allowing for PRO collection and continued patient engagement outside of the clinical setting.
